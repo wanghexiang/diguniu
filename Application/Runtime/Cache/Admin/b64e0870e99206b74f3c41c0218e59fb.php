@@ -50,11 +50,17 @@
 </form>
 </div>
 </div>
+<style>
+.errortips{
+
+	color:red;
+}
+</style>
 <script>
 
 	$('#admin-info').validate({
-		errorElement : 'a',
-		errorClass : 'a',
+		errorElement : 'span',
+		errorClass : 'errortips',
 		//focusCleanup : true,
 		focusInvalid : true,
 		rules : {
