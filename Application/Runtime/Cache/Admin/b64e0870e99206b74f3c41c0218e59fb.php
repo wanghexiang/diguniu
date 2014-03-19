@@ -65,7 +65,8 @@
 		focusInvalid : true,
 		rules : {
 			username : {
-				required : true
+				required : true,
+								
 			},
 			password : {
 				required : true,
@@ -80,7 +81,7 @@
 		messages : {
 			username : {
 				required : "请输入用户名.",
-				username : "请输入用户名."
+				//remote :"该用户名已经存在"
 			},
 			password : {
 				required : "请输密码.",
@@ -96,30 +97,4 @@
 	}); 
 </script>
 
-<div id="dialog" class="bootbox modal fade in" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" data-dismiss="modal" aria-hidden="true" class="bootbox-close-button close">
-					×
-				</button>
-				<h4 class="modal-title">请稍后...</h4>
-			</div>
-			<div class="modal-body">
-				<div class="bootbox-body">
-					数据提正在交中... <i class="icon-spinner icon-spin orange bigger-125"></i>
-				</div>
-			</div>
-			<div class="modal-footer">
-				<button data-bb-handler="cancel" type="button" class="btn btn-default">
-					Cancel
-				</button>
-
-				<button data-bb-handler="confirm" type="button" class="btn btn-primary">
-					OK
-				</button>
-			</div>
-		</div>
-	</div>
-</div>
 </body>

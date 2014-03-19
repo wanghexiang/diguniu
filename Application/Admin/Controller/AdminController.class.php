@@ -76,5 +76,19 @@ class AdminController extends Controller {
 			$this->error("删除失败！");
 		}
 	}
+	//检查用户名称是否正常
+	public function check(){
+		$id=I("id");
+		$username=I("username");
+		$admin=M("admin");
+		$admin->where("id<>'".$id."' and username='".$username."'" );
+		if($admin->count()>0){
+
+			echo "该用户已经存在";
+		}else{
+			echo "该用户名可用";
+		}
+
+	}
 
 }
