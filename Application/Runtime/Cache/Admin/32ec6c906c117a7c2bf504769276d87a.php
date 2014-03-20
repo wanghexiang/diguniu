@@ -18,7 +18,7 @@
 
 <!-- Modal -->
 
-        <div class="modal-content col-sm-4 row">
+        <div class="modal-content col-sm-4 container">
             <div class="modal-header">
                 <h2 class="modal-title" id="myModalLabel">用户登陆</h2>
             </div>

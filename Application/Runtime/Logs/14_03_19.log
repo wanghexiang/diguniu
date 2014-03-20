@@ -2297,3 +2297,33 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001128s ]
 
+[ 2014-03-19T17:30:53+08:00 ] 127.0.0.1 /diguniu/index.php?m=Admin&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+
+[ 2014-03-19T17:30:54+08:00 ] 127.0.0.1 /diguniu/index.php?m=Admin&c=Login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000967s ]
+
+[ 2014-03-19T17:34:08+08:00 ] 127.0.0.1 /diguniu/index.php?m=Admin&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000990s ]
+
+[ 2014-03-19T17:34:10+08:00 ] 127.0.0.1 /diguniu/index.php?m=Admin&c=Login&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001017s ]
+
+[ 2014-03-19T17:34:12+08:00 ] 127.0.0.1 /diguniu/index.php?m=Admin&c=Login&a=verify&time=0.7280083196297361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000979s ]
+
+[ 2014-03-19T17:34:14+08:00 ] 127.0.0.1 /diguniu/index.php?m=Admin&c=Login&a=verify&time=0.7280083196297361&time=0.14537243664469857
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000990s ]
+
