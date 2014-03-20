@@ -34,7 +34,7 @@ class LoginController extends Controller {
 			//echo $admin->getLastSql();exit();
 			if ($admin -> count() > 0) {
 				$admin -> find();
-				session("usernmae", $admin -> usernmae);
+				session("username", $admin -> username);
 				session("user_id", $admin -> id);
 				$this -> success("登陆成功", U('Admin/Index/index'));
 

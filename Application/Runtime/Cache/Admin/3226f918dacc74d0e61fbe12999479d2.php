@@ -16,28 +16,28 @@
 
 <body style="margin:10px;">
 <div class="panel panel-primary">
-        <div class="panel-heading">
-          <h3 class="panel-title">管理员列表</h3>
-        </div>
-        <div class="panel-body">
-			<table class="table table-hover table-bordered table-condensed">
-				<tr>
-					<th>名称</th>
-					<th>上次登录时间</th>
-					<th>操作</th>
-				</tr>
-				<?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><tr>
-				
-					<td><?php echo ($v["username"]); ?></td>
-					<td><?php echo (date('Y-m-d',$v["login_time"])); ?></td>
-					<td><a href="<?php echo U('edit?id='.$v['id']);?>"><span class="glyphicon glyphicon-pencil "></span> </a>
-						&nbsp;&nbsp;<a onclick="return confirm('确定删除?');" href="<?php echo U('delete?id='.$v['id']);?>"><span class="glyphicon glyphicon-trash"></span></a></td>
-				</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-			</table>
-        </div>
-		<div class="panel-footer">	
-			<?php echo ($page); ?>
- 
-        </div>
-      </div>
+    <div class="panel-heading">
+        <h3 class="panel-title">管理员列表</h3>
+    </div>
+    <div class="panel-body">
+        <table class="table table-hover table-bordered table-condensed">
+            <tr>
+                <th>名称</th>
+                <th>上次登录时间</th>
+                <th>操作</th>
+            </tr>
+            <?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><tr> 
+
+                    <td><?php echo ($v["username"]); ?></td>
+                    <td><?php echo (date('Y-m-d',$v["login_time"])); ?></td>
+                    <td><a href="<?php echo U('edit?id='.$v['id']);?>"><span class="glyphicon glyphicon-pencil "></span> </a>
+                        &nbsp;&nbsp;<a onclick="return confirm('确定删除?');" href="<?php echo U('delete?id='.$v['id']);?>"><span class="glyphicon glyphicon-trash"></span></a></td>
+                </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+        </table>
+    </div>
+    <div class="panel-footer">	
+        <?php echo ($page); ?>
+
+    </div>
+</div>
 </body>

@@ -4,8 +4,8 @@
 
 namespace Admin\Controller;
 
-use Think\Controller;
-class AdminController extends Controller {
+use Admin\Controller\BaseController;
+class AdminController extends BaseController {
 
     public function index() {
         
