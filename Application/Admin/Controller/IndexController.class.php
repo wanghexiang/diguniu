@@ -1,19 +1,18 @@
 <?php
 
-// 本类由系统自动生成，仅供测试用途
+/**
+ * 后台首页
+ */
 
 namespace Admin\Controller;
 
-use Think\Controller;
+use Admin\BaseController;
 
-class IndexController extends Controller {
+class IndexController extends BaseController {
 
     public function index() {
         $this->display();
     }
 
-    public function mylistaction() {
-        
-    }
-
+    
 }
