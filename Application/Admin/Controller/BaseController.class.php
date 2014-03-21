@@ -13,7 +13,12 @@ class BaseController extends Controller {
        //判断登陆状态
        // echo "1212121";
        // print_r($_SESSION);exit();
-       if(!session("username")){
+       $username=  cookie("username");
+       $password=  cookie("password");
+       $admin=M('admin');
+       $admin->where("username='".$username."'and password='".$password."'");
+       $count=$admin->count();
+       if(!session("username")&&($count<>1)){
            $this->error("您还没有登陆!",U('Admin/Login/index'));
           // $this->redirect(U('Admin/Login/index'));
        }else{

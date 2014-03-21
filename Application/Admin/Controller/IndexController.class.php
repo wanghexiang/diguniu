@@ -6,11 +6,12 @@
 
 namespace Admin\Controller;
 
-use Admin\BaseController;
+use Admin\Controller\BaseController;
 
 class IndexController extends BaseController {
 
     public function index() {
+        //print_r($_COOKIE);
         $this->display();
     }
 
