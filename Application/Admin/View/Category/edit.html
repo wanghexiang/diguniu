@@ -8,14 +8,16 @@
                 <label for="category" class="col-md-2 control-label">所属分类</label>
                 <div class="col-sm-3">
                     <select name='p_id'>
-                        <option value="{$base_category.id}">{$base_category.name}</option> 
+                        <volist name="categorys" id="v">
+                            <option value="{$v.id}"<?php if($v['id']==$category['p_id']) echo "selected";?>>{$v.html}{$v.name}</option>
+                        </volist>
                     </select>
                 </div>
             </div>
             <div class="form-group">
                 <label for="category" class="col-md-2 control-label">分类名称</label>
                 <div class="col-sm-3">
-                    <input type="text" name="category-name" id="category-name" class="form-control col-xs-4"  placeholder="分类名称">
+                    <input type="text" name="category_name" id="category_name" class="form-control col-xs-4"  placeholder="分类名称" value="{$category.name}">
                 </div>
             </div>
             <input type="hidden" value="{$category.id}" name="id"/>

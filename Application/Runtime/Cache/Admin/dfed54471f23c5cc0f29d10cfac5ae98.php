@@ -25,14 +25,14 @@
                 <label for="category" class="col-md-2 control-label">所属分类</label>
                 <div class="col-sm-3">
                     <select name='p_id'>
-                        <option value="<?php echo ($base_category["id"]); ?>"><?php echo ($base_category["name"]); ?></option> 
+                        <?php if(is_array($categorys)): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><option value="<?php echo ($v["id"]); ?>"<?php if($v['id']==$category['p_id']) echo "selected";?>><?php echo ($v["html"]); echo ($v["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
                     </select>
                 </div>
             </div>
             <div class="form-group">
                 <label for="category" class="col-md-2 control-label">分类名称</label>
                 <div class="col-sm-3">
-                    <input type="text" name="category-name" id="category-name" class="form-control col-xs-4"  placeholder="分类名称">
+                    <input type="text" name="category_name" id="category_name" class="form-control col-xs-4"  placeholder="分类名称" value="<?php echo ($category["name"]); ?>">
                 </div>
             </div>
             <input type="hidden" value="<?php echo ($category["id"]); ?>" name="id"/>
