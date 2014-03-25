@@ -22,7 +22,8 @@ class ArticleController extends BaseController{
         $this->assign("article",$result);
         $this->assign("content",$result2);
         $category=M("category");
-        $categories= \Admin\Controller\CommonController::tree($category);
+        $category_array= $category->select();
+        $categories= \Admin\Controller\CommonController::tree($category_array);
         $this->assign("categorys",$categories);
         $this->display();
     }
