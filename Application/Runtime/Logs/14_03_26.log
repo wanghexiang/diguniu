@@ -690,3 +690,133 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001363s ]
 
+[ 2014-03-26T17:18:12+08:00 ] 127.0.0.100 /diguniu/index.php?m=Admin&c=Article&a=edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001132s ]
+
+[ 2014-03-26T17:18:15+08:00 ] 127.0.0.100 /diguniu/index.php?m=Admin&c=Article&a=article_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001226s ]
+
+[ 2014-03-26T17:18:18+08:00 ] 127.0.0.100 /diguniu/index.php?m=Admin&c=Article&a=edit&id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000860s ]
+
+[ 2014-03-26T17:18:55+08:00 ] 127.0.0.100 /diguniu/index.php?m=Admin&c=Article&a=article_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000886s ]
+
+[ 2014-03-26T17:18:59+08:00 ] 127.0.0.100 /diguniu/index.php?m=Admin&c=Article&a=edit&id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000857s ]
+
+[ 2014-03-26T17:19:16+08:00 ] 127.0.0.100 /diguniu/index.php?m=Admin&c=Article&a=edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001036s ]
+
+[ 2014-03-26T17:19:19+08:00 ] 127.0.0.100 /diguniu/index.php?m=Admin&c=Category&a=category_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000864s ]
+
+[ 2014-03-26T17:19:21+08:00 ] 127.0.0.100 /diguniu/index.php?m=Admin&c=Category&a=edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001685s ]
+
+[ 2014-03-26T17:19:23+08:00 ] 127.0.0.100 /diguniu/index.php?m=Admin&c=Category&a=edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000894s ]
+
+[ 2014-03-26T17:19:25+08:00 ] 127.0.0.100 /diguniu/index.php?m=Admin&c=Category&a=category_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000899s ]
+
+[ 2014-03-26T17:19:29+08:00 ] 127.0.0.100 /diguniu/index.php?m=Admin&c=Category&a=edit&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000871s ]
+
+[ 2014-03-26T17:19:37+08:00 ] 127.0.0.100 /diguniu/index.php?m=Admin&c=Category&a=save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000856s ]
+
+[ 2014-03-26T17:19:39+08:00 ] 127.0.0.100 /diguniu/index.php?m=Admin&c=Category&a=edit&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000924s ]
+
+[ 2014-03-26T17:19:45+08:00 ] 127.0.0.100 /diguniu/index.php?m=Admin&c=Article&a=article_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000856s ]
+
+[ 2014-03-26T17:19:49+08:00 ] 127.0.0.100 /diguniu/index.php?m=Admin&c=Article&a=edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000954s ]
+
+[ 2014-03-26T17:19:53+08:00 ] 127.0.0.100 /diguniu/index.php?m=Admin&c=Category&a=edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000877s ]
+
+[ 2014-03-26T17:19:55+08:00 ] 127.0.0.100 /diguniu/index.php?m=Admin&c=Category&a=category_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000850s ]
+
+[ 2014-03-26T17:20:12+08:00 ] 127.0.0.100 /diguniu/index.php?m=Admin&c=Category&a=edit&id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-03-26T17:20:15+08:00 ] 127.0.0.100 /diguniu/index.php?m=Admin&c=Article&a=edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001079s ]
+
+[ 2014-03-26T17:20:18+08:00 ] 127.0.0.100 /diguniu/index.php?m=Admin&c=Article&a=article_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000899s ]
+
+[ 2014-03-26T17:20:35+08:00 ] 127.0.0.100 /diguniu/index.php?m=Admin&c=Category&a=edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001008s ]
+
+[ 2014-03-26T17:20:37+08:00 ] 127.0.0.100 /diguniu/index.php?m=Admin&c=Article&a=edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001374s ]
+
+[ 2014-03-26T17:20:40+08:00 ] 127.0.0.100 /diguniu/index.php?m=Admin&c=Article&a=save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000870s ]
+
+[ 2014-03-26T17:21:39+08:00 ] 127.0.0.100 /diguniu/index.php?m=Admin&c=Category&a=edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001249s ]
+
+[ 2014-03-26T17:21:41+08:00 ] 127.0.0.100 /diguniu/index.php?m=Admin&c=Article&a=edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000949s ]
+
+[ 2014-03-26T17:21:43+08:00 ] 127.0.0.100 /diguniu/index.php?m=Admin&c=Article&a=article_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000878s ]
+
