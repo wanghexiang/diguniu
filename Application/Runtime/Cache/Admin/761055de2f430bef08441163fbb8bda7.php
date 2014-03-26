@@ -47,7 +47,7 @@
                 <label for="category" class="col-md-2 control-label">文章内容</label>
                 <div class="col-sm-5">
                     <!--style给定宽度可以影响编辑器的最终宽度-->
-                    <script type="text/plain" id="myEditor" style="width:100%;">
+                    <script type="text/plain" id="myEditor" style="width:95%;">
                         <p>这里我可以写一些输入提示</p>
                     </script>
                 </div>
