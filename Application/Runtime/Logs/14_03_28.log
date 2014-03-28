@@ -2680,3 +2680,2131 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002419s ]
 INFO: [ app_end ] --END-- [ RunTime:0.002544s ]
 
+[ 2014-03-28T16:39:18+08:00 ] 127.0.0.100 /diguniu/Admin/Article/edit.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002548s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005710s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000486s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.006086s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.005558s ]
+SQL: SELECT * FROM `article` WHERE ( id= ) LIMIT 1   [ RunTime:0.000297s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `article` WHERE ( id= ) LIMIT 1  
+SQL: SELECT * FROM `arc_content` WHERE ( arc_id= ) LIMIT 1   [ RunTime:0.000235s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `arc_content` WHERE ( arc_id= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.005679s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000608s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024210s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024370s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002110s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004690s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002575s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002713s ]
+
+[ 2014-03-28T16:39:20+08:00 ] 127.0.0.100 /diguniu/Admin/Article/article_list.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002400s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005876s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000738s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.005708s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.000521s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+NOTIC: [8] Undefined variable: page E:\www\code\diguniu\Application\Runtime\Cache\Admin\f68c5a1a42542d9b876352dd3eb66abd.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025145s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025289s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001916s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002755s ]
+
+[ 2014-03-28T16:39:22+08:00 ] 127.0.0.100 /diguniu/Admin/Article/edit/id/15.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002409s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.006244s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.005857s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.006057s ]
+SQL: SELECT * FROM `article` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.000568s ]
+SQL: SELECT * FROM `arc_content` WHERE ( arc_id=15 ) LIMIT 1   [ RunTime:0.000356s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.005860s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000431s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026421s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026606s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002464s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006905s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003114s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003258s ]
+
+[ 2014-03-28T16:39:39+08:00 ] 127.0.0.100 /diguniu/Admin/Article/save.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005609s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.006572s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.005597s ]
+SQL: UPDATE `article` SET `title`='文章标题',`create_time`=1395995979,`cate_id`=1 WHERE ( id='15' ) [ RunTime:0.023778s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019651s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019804s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002184s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004848s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004212s ]
+
+[ 2014-03-28T16:39:42+08:00 ] 127.0.0.100 /diguniu/Admin/Article/edit/id/15.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002781s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.006535s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.006235s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.005784s ]
+SQL: SELECT * FROM `article` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.000522s ]
+SQL: SELECT * FROM `arc_content` WHERE ( arc_id=15 ) LIMIT 1   [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.005766s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000422s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025876s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002202s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002903s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002776s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002903s ]
+
+[ 2014-03-28T16:39:51+08:00 ] 127.0.0.100 /diguniu/Admin/Article/save.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002385s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.006540s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000539s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018990s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019145s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001884s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003006s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005105s ]
+
+[ 2014-03-28T16:39:57+08:00 ] 127.0.0.100 /diguniu/Admin/Article/article_list.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001824s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002897s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005582s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000487s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.005641s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.000640s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+NOTIC: [8] Undefined variable: page E:\www\code\diguniu\Application\Runtime\Cache\Admin\f68c5a1a42542d9b876352dd3eb66abd.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028448s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028588s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002988s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002737s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006068s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002881s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003013s ]
+
+[ 2014-03-28T16:39:57+08:00 ] 127.0.0.100 /diguniu/Admin/Article/edit.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002502s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.007163s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.010033s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.008107s ]
+SQL: SELECT * FROM `article` WHERE ( id= ) LIMIT 1   [ RunTime:0.000250s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `article` WHERE ( id= ) LIMIT 1  
+SQL: SELECT * FROM `arc_content` WHERE ( arc_id= ) LIMIT 1   [ RunTime:0.000162s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `arc_content` WHERE ( arc_id= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.006184s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000498s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025871s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026026s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001921s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002657s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004794s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002431s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002558s ]
+
+[ 2014-03-28T16:40:00+08:00 ] 127.0.0.100 /diguniu/Admin/Article/edit/id/15.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002709s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.006541s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.005699s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.005573s ]
+SQL: SELECT * FROM `article` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.000514s ]
+SQL: SELECT * FROM `arc_content` WHERE ( arc_id=15 ) LIMIT 1   [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.005414s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000435s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025504s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025654s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002235s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002773s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002791s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002920s ]
+
+[ 2014-03-28T16:40:11+08:00 ] 127.0.0.100 /diguniu/Admin/Article/save.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002444s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005910s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.006271s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.005589s ]
+SQL: UPDATE `article` SET `title`='文章标题',`create_time`=1395996011,`cate_id`=1 WHERE ( id='15' ) [ RunTime:0.001799s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020186s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020339s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001702s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002258s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002388s ]
+
+[ 2014-03-28T16:40:14+08:00 ] 127.0.0.100 /diguniu/Admin/Article/edit/id/15.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002269s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.006755s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000531s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.005774s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.006414s ]
+SQL: SELECT * FROM `article` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.000639s ]
+SQL: SELECT * FROM `arc_content` WHERE ( arc_id=15 ) LIMIT 1   [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.005781s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000427s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026586s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001790s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004214s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002987s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003150s ]
+
+[ 2014-03-28T16:40:18+08:00 ] 127.0.0.100 /diguniu/Admin/Article/article_list.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002360s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005464s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.005954s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.000538s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+NOTIC: [8] Undefined variable: page E:\www\code\diguniu\Application\Runtime\Cache\Admin\f68c5a1a42542d9b876352dd3eb66abd.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025405s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001782s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004289s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002249s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002390s ]
+
+[ 2014-03-28T16:40:21+08:00 ] 127.0.0.100 /diguniu/Admin/Article/edit/id/15.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001794s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002346s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005551s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000599s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.005716s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.005931s ]
+SQL: SELECT * FROM `article` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.000528s ]
+SQL: SELECT * FROM `arc_content` WHERE ( arc_id=15 ) LIMIT 1   [ RunTime:0.000490s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.005432s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000436s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025808s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025965s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001955s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002189s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004368s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002523s ]
+
+[ 2014-03-28T16:41:57+08:00 ] 127.0.0.100 /diguniu/Admin/Article/article_list.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003037s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005632s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.001066s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.006139s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.001073s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] Undefined variable: page E:\www\code\diguniu\Application\Runtime\Cache\Admin\f68c5a1a42542d9b876352dd3eb66abd.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029187s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002293s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002541s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005044s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003709s ]
+
+[ 2014-03-28T16:41:59+08:00 ] 127.0.0.100 /diguniu/Admin/Article/edit/id/15.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002992s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005875s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000794s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.006265s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.006329s ]
+SQL: SELECT * FROM `article` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.000610s ]
+SQL: SELECT * FROM `arc_content` WHERE ( arc_id=15 ) LIMIT 1   [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.006059s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000411s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028795s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028946s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002224s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002947s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005385s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003801s ]
+
+[ 2014-03-28T16:42:15+08:00 ] 127.0.0.100 /diguniu/Admin/Article/save.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002955s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005541s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000537s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.005973s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.005684s ]
+SQL: UPDATE `arc_content` SET `content`='水电费是的垃圾费老师的课件分离式的放假了开始的减肥离开时代就废了开始觉得法律框架SD卡浪费科室里的减肥快乐圣诞节菲利克斯离开的减肥看来是的减肥快乐圣诞节方式来得快' WHERE ( arc_id='15' ) [ RunTime:0.001706s ]
+SQL: UPDATE `article` SET `title`='文章标题',`create_time`=1395996135,`cate_id`=1 WHERE ( id='15' ) [ RunTime:0.023130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020685s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002817s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002262s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002397s ]
+
+[ 2014-03-28T16:42:17+08:00 ] 127.0.0.100 /diguniu/Admin/Article/edit/id/15.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001838s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002383s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.006685s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.001056s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.005805s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.006445s ]
+SQL: SELECT * FROM `article` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.000597s ]
+SQL: SELECT * FROM `arc_content` WHERE ( arc_id=15 ) LIMIT 1   [ RunTime:0.000557s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.005762s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000437s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025536s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025689s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001726s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002268s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002465s ]
+
+[ 2014-03-28T16:42:29+08:00 ] 127.0.0.100 /diguniu/Admin/Article/save.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002415s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005945s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000616s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.007271s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.006936s ]
+SQL: UPDATE `arc_content` SET `content`='&lt;p&gt;\r\n	&lt;strong&gt;水电费是的垃圾费老师的课件分离式的放假了开始的减肥离开时代就废了开始觉得法律框架SD卡浪费科室里的减肥快乐圣诞节菲利克斯离开的减肥看来是的减肥快乐圣诞节方式来得快&lt;/strong&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;strong&gt;收到了福建了深刻的减肥时代就废了开始觉得法兰&lt;/strong&gt;克时代开了房间时刻的连接法律斯柯达罚款了晒得久飞\r\n&lt;/p&gt;' WHERE ( arc_id='15' ) [ RunTime:0.018557s ]
+SQL: UPDATE `article` SET `title`='文章标题',`create_time`=1395996149,`cate_id`=1 WHERE ( id='15' ) [ RunTime:0.001017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019432s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002237s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004560s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002235s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002365s ]
+
+[ 2014-03-28T16:42:31+08:00 ] 127.0.0.100 /diguniu/Admin/Article/edit/id/15.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001805s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002172s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002326s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005534s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000611s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.006462s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.005913s ]
+SQL: SELECT * FROM `article` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.000538s ]
+SQL: SELECT * FROM `arc_content` WHERE ( arc_id=15 ) LIMIT 1   [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.007345s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000497s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024959s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025117s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001785s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002452s ]
+
+[ 2014-03-28T16:42:51+08:00 ] 127.0.0.100 /diguniu/Admin/Article/edit.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002264s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.007109s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000565s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.005846s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.006056s ]
+SQL: SELECT * FROM `article` WHERE ( id= ) LIMIT 1   [ RunTime:0.000241s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `article` WHERE ( id= ) LIMIT 1  
+SQL: SELECT * FROM `arc_content` WHERE ( arc_id= ) LIMIT 1   [ RunTime:0.000160s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `arc_content` WHERE ( arc_id= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.005978s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000461s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025027s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025178s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001734s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002270s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002399s ]
+
+[ 2014-03-28T16:43:26+08:00 ] 127.0.0.100 /diguniu/Admin/Article/edit.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002344s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.006469s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.008330s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.006004s ]
+SQL: SELECT * FROM `article` WHERE ( id= ) LIMIT 1   [ RunTime:0.000249s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `article` WHERE ( id= ) LIMIT 1  
+SQL: SELECT * FROM `arc_content` WHERE ( arc_id= ) LIMIT 1   [ RunTime:0.000162s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `arc_content` WHERE ( arc_id= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.006903s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000543s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025504s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025655s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001742s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003121s ]
+
+[ 2014-03-28T16:43:27+08:00 ] 127.0.0.100 /diguniu/Admin/Article/article_list.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002143s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002310s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005887s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.006097s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.000493s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] Undefined variable: page E:\www\code\diguniu\Application\Runtime\Cache\Admin\f68c5a1a42542d9b876352dd3eb66abd.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026378s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001740s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002062s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002204s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002342s ]
+
+[ 2014-03-28T16:43:30+08:00 ] 127.0.0.100 /diguniu/Admin/Article/edit/id/15.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007438s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.006096s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000558s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.005913s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.006365s ]
+SQL: SELECT * FROM `article` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.000744s ]
+SQL: SELECT * FROM `arc_content` WHERE ( arc_id=15 ) LIMIT 1   [ RunTime:0.000559s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.005580s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000640s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026866s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002057s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002288s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004569s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003619s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003744s ]
+
+[ 2014-03-28T16:44:06+08:00 ] 127.0.0.100 /diguniu/Admin/Article/save.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002246s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005701s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000636s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.005752s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.005511s ]
+SQL: UPDATE `arc_content` SET `content`='&lt;p&gt;\r\n	&lt;strong&gt;水电费是的垃圾费老师的课件分离式的放假了开始的减肥离开时代就废了开始觉得法律框架SD卡浪费科室里的减肥快乐圣诞节菲利克斯离开的减肥看来是的减肥快乐圣诞节方式来得快&lt;/strong&gt; \r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;strong&gt;收到了福建了深刻的减肥时代就废了开始觉得法兰&lt;/strong&gt;克时代开了房间时刻的连接法律斯柯达罚款了晒得久飞\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	是打发了似的减肥拉屎的弗兰克撒娇的弗兰克受打击了开发坚实的浪费\r\n&lt;/p&gt;' WHERE ( arc_id='15' ) [ RunTime:0.000991s ]
+SQL: UPDATE `article` SET `title`='文章标题',`create_time`=1395996246,`cate_id`=1 WHERE ( id='15' ) [ RunTime:0.001108s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021475s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001831s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002230s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002355s ]
+
+[ 2014-03-28T16:44:08+08:00 ] 127.0.0.100 /diguniu/Admin/Article/edit/id/15.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002178s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002335s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.006659s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000510s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.005683s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.005915s ]
+SQL: SELECT * FROM `article` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.000575s ]
+SQL: SELECT * FROM `arc_content` WHERE ( arc_id=15 ) LIMIT 1   [ RunTime:0.000814s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.005539s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000411s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025252s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001764s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002271s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002405s ]
+
+[ 2014-03-28T16:44:19+08:00 ] 127.0.0.100 /diguniu/Admin/Article/save.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002471s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.006213s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000536s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.005989s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.005832s ]
+SQL: UPDATE `arc_content` SET `content`='&lt;p&gt;\r\n	&lt;strong&gt;水电费是的垃圾费老师的课件分离式的放假了开始的减肥离开时代就废了开始觉得法律框架SD卡浪费科室里的减肥快乐圣诞节菲利克斯离开的减肥看来是的减肥快乐圣诞节方式来得快&lt;/strong&gt; \r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;strong&gt;收到了福建了深刻的减肥时代就废了开始觉得法兰&lt;/strong&gt;克时代开了房间时刻的连接法律斯柯达罚款了晒得久飞\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	是打发了似的减肥拉屎的弗兰克撒娇的弗兰克受打击了开发坚实的浪费\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	善良劫匪十里店飞机了深刻的减肥l\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	发生的垃圾费十里店\r\n&lt;/p&gt;' WHERE ( arc_id='15' ) [ RunTime:0.001542s ]
+SQL: UPDATE `article` SET `title`='文章标题',`create_time`=1395996259,`cate_id`=1 WHERE ( id='15' ) [ RunTime:0.001043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020904s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021058s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001792s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002050s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002224s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002355s ]
+
+[ 2014-03-28T16:44:21+08:00 ] 127.0.0.100 /diguniu/Admin/Article/edit/id/15.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002288s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005839s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000541s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.007374s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.005996s ]
+SQL: SELECT * FROM `article` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.000566s ]
+SQL: SELECT * FROM `arc_content` WHERE ( arc_id=15 ) LIMIT 1   [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.006165s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000471s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025358s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025511s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003132s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005657s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002471s ]
+
+[ 2014-03-28T16:44:41+08:00 ] 127.0.0.100 /diguniu/Admin/Article/save.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002427s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005548s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.006686s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.005679s ]
+SQL: UPDATE `arc_content` SET `content`='&lt;p&gt;\r\n	&lt;strong&gt;水电费是的垃圾费老师的课件分离式的放假了开始的减肥离开时代就废了开始觉得法律框架SD卡浪费科室里的减肥快乐圣诞节菲利克斯离开的减肥看来是的减肥快乐圣诞节方式来得快&lt;/strong&gt; \r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;strong&gt;收到了福建了深刻的减肥时代就废了开始觉得法兰&lt;/strong&gt;克时代开了房间时刻的连接法律斯柯达罚款了晒得久飞\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	是打发了似的减肥拉屎的弗兰克撒娇的弗兰克受打击了开发坚实的浪费\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	善良劫匪十里店飞机了深刻的减肥l\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	发生的垃圾费十里店\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	收到了福建十里店\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	收到了福建十里店减肥\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	是打发了似的减肥\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	束带结发\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	s\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	是否\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	dfsfsdfs\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	sdfsdf\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;' WHERE ( arc_id='15' ) [ RunTime:0.001308s ]
+SQL: UPDATE `article` SET `title`='文章标题',`create_time`=1395996281,`cate_id`=1 WHERE ( id='15' ) [ RunTime:0.001015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020293s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001805s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004057s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002612s ]
+
+[ 2014-03-28T16:44:43+08:00 ] 127.0.0.100 /diguniu/Admin/Article/edit/id/15.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002286s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.006057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000554s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.009522s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.006127s ]
+SQL: SELECT * FROM `article` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.000585s ]
+SQL: SELECT * FROM `arc_content` WHERE ( arc_id=15 ) LIMIT 1   [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.007654s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000535s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024908s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001736s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002384s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004690s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002635s ]
+
+[ 2014-03-28T16:44:46+08:00 ] 127.0.0.100 /diguniu/Admin/Article/edit.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003268s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005941s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000730s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.005996s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.006578s ]
+SQL: SELECT * FROM `article` WHERE ( id= ) LIMIT 1   [ RunTime:0.000290s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `article` WHERE ( id= ) LIMIT 1  
+SQL: SELECT * FROM `arc_content` WHERE ( arc_id= ) LIMIT 1   [ RunTime:0.000197s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `arc_content` WHERE ( arc_id= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.005892s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000472s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025815s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001757s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002659s ]
+
+[ 2014-03-28T16:44:48+08:00 ] 127.0.0.100 /diguniu/Admin/Article/article_list.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002262s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005819s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000672s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.007988s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.000638s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] Undefined variable: page E:\www\code\diguniu\Application\Runtime\Cache\Admin\f68c5a1a42542d9b876352dd3eb66abd.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026739s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026878s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001821s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002068s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002475s ]
+
+[ 2014-03-28T16:44:50+08:00 ] 127.0.0.100 /diguniu/Admin/Article/edit.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002424s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.006461s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000558s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.007271s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.005704s ]
+SQL: SELECT * FROM `article` WHERE ( id= ) LIMIT 1   [ RunTime:0.000270s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `article` WHERE ( id= ) LIMIT 1  
+SQL: SELECT * FROM `arc_content` WHERE ( arc_id= ) LIMIT 1   [ RunTime:0.000207s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `arc_content` WHERE ( arc_id= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.005608s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000611s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031137s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031287s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001782s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002469s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002632s ]
+
+[ 2014-03-28T16:44:52+08:00 ] 127.0.0.100 /diguniu/Admin/Category/edit.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002273s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005642s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000617s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.005766s ]
+SQL: SELECT * FROM `category` WHERE ( id='' ) LIMIT 1   [ RunTime:0.000530s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000353s ]
+NOTIC: [8] Undefined variable: base_category E:\www\code\diguniu\Application\Admin\Controller\CategoryController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024770s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001801s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002221s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002352s ]
+
+[ 2014-03-28T16:44:53+08:00 ] 127.0.0.100 /diguniu/Admin/Category/category_list.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002799s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005522s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.005451s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000483s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+NOTIC: [8] Undefined variable: page E:\www\code\diguniu\Application\Runtime\Cache\Admin\46fc65ba2b7dc6249bfde48ce8661431.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001754s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004327s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002244s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002370s ]
+
+[ 2014-03-28T16:44:56+08:00 ] 127.0.0.100 /diguniu/Admin/Category/edit/id/2.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003040s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.007280s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.005948s ]
+SQL: SELECT * FROM `category` WHERE ( id='2' ) LIMIT 1   [ RunTime:0.000539s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000397s ]
+NOTIC: [8] Undefined variable: base_category E:\www\code\diguniu\Application\Admin\Controller\CategoryController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000276s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026179s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002579s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002562s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002611s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002745s ]
+
+[ 2014-03-28T16:44:58+08:00 ] 127.0.0.100 /diguniu/Admin/Admin/edit.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002180s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002333s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.007648s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000630s ]
+NOTIC: [8] Undefined index: id E:\www\code\diguniu\Application\Admin\Controller\AdminController.class.php 第 16 行.
+SQL: SELECT * FROM `admin` WHERE ( id= ) LIMIT 1   [ RunTime:0.000314s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `admin` WHERE ( id= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027806s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027953s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001754s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004067s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002574s ]
+
+[ 2014-03-28T16:44:59+08:00 ] 127.0.0.100 /diguniu/Admin/Admin/admin_list.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003155s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.006207s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000546s ]
+SQL: SELECT * FROM `admin` LIMIT 0,10   [ RunTime:0.000465s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` LIMIT 1   [ RunTime:0.000302s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036613s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036762s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001811s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002463s ]
+
+[ 2014-03-28T16:45:02+08:00 ] 127.0.0.100 /diguniu/Admin/Admin/edit/id/34.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002266s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005650s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000569s ]
+SQL: SELECT * FROM `admin` WHERE ( id=34 ) LIMIT 1   [ RunTime:0.000457s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023471s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023636s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001721s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002211s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002338s ]
+
+[ 2014-03-28T16:45:03+08:00 ] 127.0.0.100 /diguniu/Admin/Category/category_list.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002437s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005529s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.005732s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000485s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+NOTIC: [8] Undefined variable: page E:\www\code\diguniu\Application\Runtime\Cache\Admin\46fc65ba2b7dc6249bfde48ce8661431.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024677s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024809s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001796s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002235s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002360s ]
+
+[ 2014-03-28T16:45:04+08:00 ] 127.0.0.100 /diguniu/Admin/Article/edit.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002606s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.006597s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.005708s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.006735s ]
+SQL: SELECT * FROM `article` WHERE ( id= ) LIMIT 1   [ RunTime:0.000381s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `article` WHERE ( id= ) LIMIT 1  
+SQL: SELECT * FROM `arc_content` WHERE ( arc_id= ) LIMIT 1   [ RunTime:0.000191s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `arc_content` WHERE ( arc_id= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.005547s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000458s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025962s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001735s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002520s ]
+
+[ 2014-03-28T16:45:04+08:00 ] 127.0.0.100 /diguniu/Admin/Category/edit.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003179s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005741s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.006006s ]
+SQL: SELECT * FROM `category` WHERE ( id='' ) LIMIT 1   [ RunTime:0.000474s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000378s ]
+NOTIC: [8] Undefined variable: base_category E:\www\code\diguniu\Application\Admin\Controller\CategoryController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024046s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001810s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004487s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002413s ]
+
+[ 2014-03-28T16:48:08+08:00 ] 127.0.0.100 /diguniu/Admin/Article/edit.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002581s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005690s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000539s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.005710s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.006475s ]
+SQL: SELECT * FROM `article` WHERE ( id= ) LIMIT 1   [ RunTime:0.000360s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `article` WHERE ( id= ) LIMIT 1  
+SQL: SELECT * FROM `arc_content` WHERE ( arc_id= ) LIMIT 1   [ RunTime:0.000169s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `arc_content` WHERE ( arc_id= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.005853s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000476s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025651s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001737s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2014-03-28T16:48:19+08:00 ] 127.0.0.100 /diguniu/Admin/Article/save.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002256s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005698s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000672s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020333s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001800s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002007s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004026s ]
+
+[ 2014-03-28T16:48:26+08:00 ] 127.0.0.100 /diguniu/Admin/Article/save.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002304s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005833s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000532s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.005924s ]
+SQL: INSERT INTO `article` (`title`,`create_time`,`cate_id`) VALUES ('12121212',1395996506,1) [ RunTime:0.016535s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.005682s ]
+SQL: INSERT INTO `arc_content` (`arc_id`,`content`) VALUES (16,'121212121') [ RunTime:0.001001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019765s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019920s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001714s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003963s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002445s ]
+
+[ 2014-03-28T16:48:28+08:00 ] 127.0.0.100 /diguniu/Admin/Article/edit.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002260s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005507s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.006245s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.005719s ]
+SQL: SELECT * FROM `article` WHERE ( id= ) LIMIT 1   [ RunTime:0.000291s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `article` WHERE ( id= ) LIMIT 1  
+SQL: SELECT * FROM `arc_content` WHERE ( arc_id= ) LIMIT 1   [ RunTime:0.000218s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `arc_content` WHERE ( arc_id= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.005718s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000485s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024426s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001758s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002562s ]
+
+[ 2014-03-28T16:48:31+08:00 ] 127.0.0.100 /diguniu/Admin/Article/article_list.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002280s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.006301s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.006253s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.000520s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+NOTIC: [8] Undefined variable: page E:\www\code\diguniu\Application\Runtime\Cache\Admin\f68c5a1a42542d9b876352dd3eb66abd.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024424s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024548s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002222s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004566s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002241s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002366s ]
+
+[ 2014-03-28T16:48:34+08:00 ] 127.0.0.100 /diguniu/Admin/Article/edit/id/16.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002327s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.006065s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000560s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.005683s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.005841s ]
+SQL: SELECT * FROM `article` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.000556s ]
+SQL: SELECT * FROM `arc_content` WHERE ( arc_id=16 ) LIMIT 1   [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.005576s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000450s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025452s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001744s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002216s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002798s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002935s ]
+
+[ 2014-03-28T16:48:39+08:00 ] 127.0.0.100 /diguniu/Admin/Article/save.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002494s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.006005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000567s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.005820s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.006167s ]
+SQL: UPDATE `arc_content` SET `content`='12121212112121212121' WHERE ( arc_id='16' ) [ RunTime:0.000992s ]
+SQL: UPDATE `article` SET `title`='12121212',`create_time`=1395996519,`cate_id`=1 WHERE ( id='16' ) [ RunTime:0.012942s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019443s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001721s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004377s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002804s ]
+
+[ 2014-03-28T16:48:41+08:00 ] 127.0.0.100 /diguniu/Admin/Article/edit/id/16.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002399s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005752s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000568s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.010263s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.007818s ]
+SQL: SELECT * FROM `article` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.001432s ]
+SQL: SELECT * FROM `arc_content` WHERE ( arc_id=16 ) LIMIT 1   [ RunTime:0.000642s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.006461s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000511s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024851s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001784s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002617s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002750s ]
+
+[ 2014-03-28T16:48:48+08:00 ] 127.0.0.100 /diguniu/Admin/Article/save.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002345s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005573s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000535s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.005798s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.006427s ]
+SQL: UPDATE `arc_content` SET `content`='12121212112121212121是的罚款了坚实的李方军收到了减肥老师看到家费十里店jf' WHERE ( arc_id='16' ) [ RunTime:0.001396s ]
+SQL: UPDATE `article` SET `title`='12121212',`create_time`=1395996528,`cate_id`=1 WHERE ( id='16' ) [ RunTime:0.001145s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020253s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020408s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001792s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002535s ]
+
+[ 2014-03-28T16:48:50+08:00 ] 127.0.0.100 /diguniu/Admin/Article/edit/id/16.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002608s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.007108s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000571s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.007190s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.006394s ]
+SQL: SELECT * FROM `article` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.000520s ]
+SQL: SELECT * FROM `arc_content` WHERE ( arc_id=16 ) LIMIT 1   [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.007225s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000597s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024177s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024339s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001952s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004428s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002427s ]
+
+[ 2014-03-28T16:48:53+08:00 ] 127.0.0.100 /diguniu/Admin/Article/article_list.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002255s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.006013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000561s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.005792s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.010097s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+NOTIC: [8] Undefined variable: page E:\www\code\diguniu\Application\Runtime\Cache\Admin\f68c5a1a42542d9b876352dd3eb66abd.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024299s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024422s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001812s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002640s ]
+
+[ 2014-03-28T16:48:55+08:00 ] 127.0.0.100 /diguniu/Admin/Article/edit.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002125s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002278s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005655s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000572s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.005958s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.005637s ]
+SQL: SELECT * FROM `article` WHERE ( id= ) LIMIT 1   [ RunTime:0.000671s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `article` WHERE ( id= ) LIMIT 1  
+SQL: SELECT * FROM `arc_content` WHERE ( arc_id= ) LIMIT 1   [ RunTime:0.000223s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `arc_content` WHERE ( arc_id= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.005786s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000473s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025157s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001719s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002421s ]
+
+[ 2014-03-28T16:49:16+08:00 ] 127.0.0.100 /diguniu/Admin/Article/save.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002253s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005668s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000568s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.006743s ]
+SQL: INSERT INTO `article` (`title`,`create_time`,`cate_id`) VALUES ('12121',1395996556,1) [ RunTime:0.010213s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.005631s ]
+SQL: INSERT INTO `arc_content` (`arc_id`,`content`) VALUES (17,'2121212') [ RunTime:0.001056s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020218s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020371s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001729s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003914s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002235s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002365s ]
+
+[ 2014-03-28T16:49:19+08:00 ] 127.0.0.100 /diguniu/Admin/Article/edit.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002375s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.007182s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000610s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.009090s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.006349s ]
+SQL: SELECT * FROM `article` WHERE ( id= ) LIMIT 1   [ RunTime:0.000239s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `article` WHERE ( id= ) LIMIT 1  
+SQL: SELECT * FROM `arc_content` WHERE ( arc_id= ) LIMIT 1   [ RunTime:0.000163s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `arc_content` WHERE ( arc_id= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.005973s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000472s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024633s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024791s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002147s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002550s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004917s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002492s ]
+
+[ 2014-03-28T16:49:24+08:00 ] 127.0.0.100 /diguniu/Admin/Article/save.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002313s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005590s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000547s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020168s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020328s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001793s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004158s ]
+
+[ 2014-03-28T16:49:52+08:00 ] 127.0.0.100 /diguniu/Admin/Article/edit.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002322s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005740s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000727s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.005762s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.009271s ]
+SQL: SELECT * FROM `article` WHERE ( id= ) LIMIT 1   [ RunTime:0.000246s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `article` WHERE ( id= ) LIMIT 1  
+SQL: SELECT * FROM `arc_content` WHERE ( arc_id= ) LIMIT 1   [ RunTime:0.000157s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `arc_content` WHERE ( arc_id= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.005785s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000478s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024346s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024576s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002384s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004777s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002508s ]
+
+[ 2014-03-28T16:49:53+08:00 ] 127.0.0.100 /diguniu/Admin/Article/article_list.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003033s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.006540s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000636s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.006146s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.000765s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+NOTIC: [8] Undefined variable: page E:\www\code\diguniu\Application\Runtime\Cache\Admin\f68c5a1a42542d9b876352dd3eb66abd.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027120s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027243s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001950s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002248s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002379s ]
+
+[ 2014-03-28T16:58:46+08:00 ] 127.0.0.100 /diguniu/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001885s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005582s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000592s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018335s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018482s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001698s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001959s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003878s ]
+
+[ 2014-03-28T16:58:50+08:00 ] 127.0.0.100 /diguniu/Admin/Login/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001578s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000301s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023083s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023286s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002155s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002633s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002657s ]
+
+[ 2014-03-28T16:58:51+08:00 ] 127.0.0.100 /diguniu/Admin/Login/verify.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000922s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002549s ]
+
+[ 2014-03-28T16:59:04+08:00 ] 127.0.0.100 /diguniu/Admin/Login/login.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000874s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001685s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005899s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username='wanghexiang' and password='96e79218965eb72c92a549dd5a330112' ) LIMIT 1   [ RunTime:0.000512s ]
+SQL: SELECT * FROM `admin` WHERE ( username='wanghexiang' and password='96e79218965eb72c92a549dd5a330112' ) LIMIT 1   [ RunTime:0.000478s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019866s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020032s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001730s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003998s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002499s ]
+
+[ 2014-03-28T16:59:06+08:00 ] 127.0.0.100 /diguniu/Admin/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000903s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001361s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.006906s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000567s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019420s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019578s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001548s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001822s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003569s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002129s ]
+
+[ 2014-03-28T16:59:06+08:00 ] 127.0.0.100 /diguniu/Admin/Index/main.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002024s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005897s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000497s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019534s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019701s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001853s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001985s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002417s ]
+
+[ 2014-03-28T16:59:06+08:00 ] 127.0.0.100 /diguniu/Admin/Index/left.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011125s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.006165s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000648s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027779s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027952s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002359s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001913s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004494s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002165s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002297s ]
+
+[ 2014-03-28T16:59:07+08:00 ] 127.0.0.100 /diguniu/Admin/Index/top.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001360s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.009192s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000717s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023569s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023770s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002311s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002704s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002475s ]
+
+[ 2014-03-28T16:59:10+08:00 ] 127.0.0.100 /diguniu/Admin/Article/edit.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001543s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005554s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000462s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.007263s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.007438s ]
+SQL: SELECT * FROM `article` WHERE ( id= ) LIMIT 1   [ RunTime:0.000310s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `article` WHERE ( id= ) LIMIT 1  
+SQL: SELECT * FROM `arc_content` WHERE ( arc_id= ) LIMIT 1   [ RunTime:0.000261s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `arc_content` WHERE ( arc_id= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.005427s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000469s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025740s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025912s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001891s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002143s ]
+
+[ 2014-03-28T16:59:14+08:00 ] 127.0.0.100 /diguniu/Admin/Article/article_list.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000894s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001655s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.006109s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000702s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.006713s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.000525s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+NOTIC: [8] Undefined variable: page E:\www\code\diguniu\Application\Runtime\Cache\Admin\f68c5a1a42542d9b876352dd3eb66abd.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029967s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001759s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004032s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002128s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002271s ]
+
+[ 2014-03-28T16:59:17+08:00 ] 127.0.0.100 /diguniu/Admin/Article/edit.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001834s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.006156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.005624s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.005362s ]
+SQL: SELECT * FROM `article` WHERE ( id= ) LIMIT 1   [ RunTime:0.000298s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `article` WHERE ( id= ) LIMIT 1  
+SQL: SELECT * FROM `arc_content` WHERE ( arc_id= ) LIMIT 1   [ RunTime:0.000221s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `arc_content` WHERE ( arc_id= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.005653s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000479s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026984s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027152s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002251s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005655s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002273s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002419s ]
+
+[ 2014-03-28T16:59:20+08:00 ] 127.0.0.100 /diguniu/Admin/Category/edit.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000870s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001391s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005770s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000492s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.005683s ]
+SQL: SELECT * FROM `category` WHERE ( id='' ) LIMIT 1   [ RunTime:0.000473s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000377s ]
+NOTIC: [8] Undefined variable: base_category E:\www\code\diguniu\Application\Admin\Controller\CategoryController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024975s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001531s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001889s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003620s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002595s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002736s ]
+
+[ 2014-03-28T16:59:22+08:00 ] 127.0.0.100 /diguniu/Admin/Category/category_list.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001356s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005496s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.006531s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000598s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000237s ]
+NOTIC: [8] Undefined variable: page E:\www\code\diguniu\Application\Runtime\Cache\Admin\46fc65ba2b7dc6249bfde48ce8661431.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025202s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025334s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001586s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001858s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003649s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001897s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002029s ]
+
+[ 2014-03-28T16:59:25+08:00 ] 127.0.0.100 /diguniu/Admin/Category/edit/id/2.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001037s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001448s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005711s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000538s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.005738s ]
+SQL: SELECT * FROM `category` WHERE ( id='2' ) LIMIT 1   [ RunTime:0.000510s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000455s ]
+NOTIC: [8] Undefined variable: base_category E:\www\code\diguniu\Application\Admin\Controller\CategoryController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025079s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025249s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002957s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002513s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005745s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002183s ]
+
+[ 2014-03-28T16:59:27+08:00 ] 127.0.0.100 /diguniu/Admin/Category/save.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001401s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005590s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000490s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.007071s ]
+SQL: UPDATE `category` SET `name`='霜1234567',`p_id`=1 WHERE ( id='2' ) [ RunTime:0.010047s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019472s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001502s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001849s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003551s ]
+
+[ 2014-03-28T16:59:33+08:00 ] 127.0.0.100 /diguniu/Admin/Category/save.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000872s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001189s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001345s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005871s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000510s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.005627s ]
+SQL: UPDATE `category` SET `name`='霜1234567',`p_id`=1 WHERE ( id='2' ) [ RunTime:0.000908s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019523s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019711s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002037s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005496s ]
+
+[ 2014-03-28T16:59:38+08:00 ] 127.0.0.100 /diguniu/Admin/Article/article_list.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001683s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.010883s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000638s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.005829s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.000521s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+NOTIC: [8] Undefined variable: page E:\www\code\diguniu\Application\Runtime\Cache\Admin\f68c5a1a42542d9b876352dd3eb66abd.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024870s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024997s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001745s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002709s ]
+
+[ 2014-03-28T16:59:40+08:00 ] 127.0.0.100 /diguniu/Admin/Article/edit.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002203s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005911s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000493s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.006827s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.006964s ]
+SQL: SELECT * FROM `article` WHERE ( id= ) LIMIT 1   [ RunTime:0.000246s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `article` WHERE ( id= ) LIMIT 1  
+SQL: SELECT * FROM `arc_content` WHERE ( arc_id= ) LIMIT 1   [ RunTime:0.000162s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `arc_content` WHERE ( arc_id= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.005767s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000456s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026174s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001560s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001983s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003756s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001884s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002013s ]
+
+[ 2014-03-28T16:59:42+08:00 ] 127.0.0.100 /diguniu/Admin/Category/edit.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001381s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005716s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.005935s ]
+SQL: SELECT * FROM `category` WHERE ( id='' ) LIMIT 1   [ RunTime:0.000504s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000396s ]
+NOTIC: [8] Undefined variable: base_category E:\www\code\diguniu\Application\Admin\Controller\CategoryController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000251s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026770s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002260s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004958s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001962s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002092s ]
+
+[ 2014-03-28T17:01:43+08:00 ] 127.0.0.100 /diguniu/Admin/Article/edit/id/16.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001923s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.005651s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( username=''and password='' ) LIMIT 1   [ RunTime:0.000484s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.006373s ]
+SQL: SHOW COLUMNS FROM `arc_content` [ RunTime:0.005722s ]
+SQL: SELECT * FROM `article` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.000553s ]
+SQL: SELECT * FROM `arc_content` WHERE ( arc_id=16 ) LIMIT 1   [ RunTime:0.000450s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.006109s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.000482s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025490s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001569s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001919s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003699s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002083s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002208s ]
+

@@ -7,7 +7,7 @@
         <h3 class="panel-title">编辑文章</h3>
     </div>
     <div class="panel-body">
-        <form class="form-horizontal" role="form" id="admin-info" method="post" action="{:U('save')}">
+        <form class="form-horizontal" role="form" id="article" method="post" action="{:U('save')}">
             <div class="form-group">
                 <label for="category" class="col-md-2 control-label">所属分类</label>
                 <div class="col-sm-3">
@@ -26,9 +26,9 @@
             </div>
             <div class="form-group">
                 <label for="category" class="col-md-2 control-label">文章内容</label>
-                <div class="col-sm-5">
+                <div class="col-sm-8">
                     <!--style给定宽度可以影响编辑器的最终宽度-->
-                   <textarea name="content" style="width:100%;height:100%;visibility:hidden;"></textarea>
+                   <textarea name="content" style="width:100%;height:400px;visibility:hidden;">{$content.content}</textarea>
                 </div>
             </div>
             <input type="hidden" value="{$article.id}" name="id"/>
@@ -63,38 +63,34 @@
 
 <script>
 
-    $('#admin-info').validate({
+    $('#article').validate({
         errorElement: 'span',
         errorClass: 'errortips',
         //focusCleanup : true,
         focusInvalid: true,
         rules: {
-            username: {
+            title: {
                 required: true,
             },
-            password: {
+            content: {
                 required: true,
-                minlength: 5
+               
             },
-            password2: {
+            cate_id: {
                 required: true,
-                minlength: 5,
-                equalTo: "#password"
             }
         },
         messages: {
-            username: {
-                required: "请输入用户名.",
-                //remote :"该用户名已经存在"
+            title: {
+                required: "文章标题不能为空",
             },
-            password: {
-                required: "请输密码.",
-                minlength: "密码必须大于6位数."
+            content: {
+                required: "文章内容不能为空",
+               
             },
-            password2: {
-                required: "请确认密码.",
-                minlength: "密码必须大于6位数.",
-                equalTo: "两次输入的密码不一致"
+            cate_id: {
+                required: "请选择文章分类",
+                
             }
         },
     });

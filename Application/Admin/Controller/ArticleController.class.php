@@ -60,7 +60,7 @@ class ArticleController extends BaseController{
             $article->where("id='".$id."'");
             $arc_content=M("arc_content");
             $arc_content->where("arc_id='".$id."'");
-             echo $content;
+            $arc_content->content=$content;
             $arc_content->save();
            
             if($article->save()){
