@@ -17,12 +17,9 @@
 
 <body style="margin:10px;">
 <!-- 配置文件 -->
-<script type="text/javascript" src="/diguniu/Public/ueditor/umeditor.config.js"></script>
-<!-- 编辑器源码文件 -->
-<script type="text/javascript" src="/diguniu/Public/ueditor/umeditor.min.js"></script>
-<!-- 语言包文件(建议手动加载语言包，避免在ie下，因为加载语言失败导致编辑器加载失败) -->
-<script type="text/javascript" src="/diguniu/Public/ueditor/lang/zh-cn/zh-cn.js"></script>
-<link  href="/diguniu/Public/ueditor/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
+<script charset="utf-8" type="text/javascript" src="/diguniu/Public/kindeditor/kindeditor-min.js"></script>
+<script charset="utf-8" type="text/javascript" src="/diguniu/Public/kindeditor/lang/zh_CN.js"></script>
+<link  href="/diguniu/Public/kindeditor/themes/default/default.css" type="text/css" rel="stylesheet">
 <div class="panel panel-primary">
     <div class="panel-heading">
         <h3 class="panel-title">编辑文章</h3>
@@ -47,9 +44,7 @@
                 <label for="category" class="col-md-2 control-label">文章内容</label>
                 <div class="col-sm-5">
                     <!--style给定宽度可以影响编辑器的最终宽度-->
-                    <script type="text/plain" id="myEditor" name="content" style="width:95%;">
-                        <?php echo html_entity_decode($content['content']);?>
-                    </script>
+                   <textarea name="content" style="width:100%;height:100%;visibility:hidden;"></textarea>
                 </div>
             </div>
             <input type="hidden" value="<?php echo ($article["id"]); ?>" name="id"/>
@@ -62,16 +57,26 @@
 
     </div>
 </div>
+
+
+
+<script>
+			var editor;
+			KindEditor.ready(function(K) {
+				editor = K.create('textarea[name="content"]', {
+					allowFileManager : true
+				});
+				
+			});
+		</script>
+	
 <style>
     .errortips{
 
         color:red;
     }
 </style>
-<script type="text/javascript">
-//实例化编辑器
-var um = UM.getEditor('myEditor');
-</script>
+
 <script>
 
     $('#admin-info').validate({

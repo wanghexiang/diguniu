@@ -14,11 +14,12 @@
 
 
 
+
 <body style="margin:10px;">
 
 <!-- Modal -->
-
-        <div class="modal-content col-sm-4 container">
+<body style="margin:auto;">
+        <div class="modal-content col-sm-4 container" >
             <div class="modal-header">
                 <h2 class="modal-title" id="myModalLabel">用户登陆</h2>
             </div>
@@ -47,7 +48,7 @@
             </div>
            
         </div><!-- /.modal-content -->
-
+</body>
 <script>
     $('#myModal').modal("show");
     $(document).ready(function(){
