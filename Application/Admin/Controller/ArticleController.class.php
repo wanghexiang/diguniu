@@ -75,6 +75,8 @@ class ArticleController extends BaseController{
     }
     //文章列表
     public function article_list(){
+		//print_r($_SESSION);
+		//PRINT_R($_COOKIE);
         $article=M("article");
         $result=$article->select();
         $this->assign("articles",$result);

@@ -61,7 +61,7 @@ class LoginController extends Controller {
 
         session(null);
         cookie(null);
-        $this->error("退出成功", U('Admin/Login/index'));
+        $this->success("退出成功", U('Admin/Login/index'));
     }
 
 }
