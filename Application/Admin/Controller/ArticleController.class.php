@@ -6,7 +6,6 @@
  * 
  */
 namespace Admin\Controller;
-use Admin\Controller\BaseController;
 class ArticleController extends BaseController{
     /**
      * 编辑文章页面
@@ -25,6 +24,7 @@ class ArticleController extends BaseController{
     }
     //保存文章
     public  function save(){
+	
         $id=I('id');
         $title=I("title");
         if(empty($title)){
@@ -41,11 +41,25 @@ class ArticleController extends BaseController{
         $article->create_time=time();
         $article->cate_id=$cate_id;
 		$article->content=$content;
+		//上传图片
+		$upload = new \Think\Upload();// 实例化上传类
+		$upload->maxSize   =     3145728 ;// 设置附件上传大小
+		$upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+		$upload->rootPath  =     './Uploads/'; // 设置附件上传根目录
+		$upload->savePath  =     ''; // 设置附件上传（子）目录
+		// 上传文件 
+		$info   =   $upload->upload();
+		if(!$info) {// 上传错误提示错误信息
+        $this->error($upload->getError());
+		}
+		
+		$article->lit_pic=$info['litpic']['savepath'].$info['litpic']['savename'];
+		
         if(empty($id)){
             if($article->add()){
-                $this->success("插入成功");
+                $this->success("新增成功！");
             }else{
-                $this->error("插入失败");
+                $this->error("新增失败！");
             }
         }else{
             $article->where("id='".$id."'"); 
@@ -79,4 +93,5 @@ class ArticleController extends BaseController{
 			$this->error("删除失败!");
 		}
 	}
+	
 }

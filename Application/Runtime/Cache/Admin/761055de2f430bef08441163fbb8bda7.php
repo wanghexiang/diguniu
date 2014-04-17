@@ -25,7 +25,7 @@
         <h3 class="panel-title">编辑文章</h3>
     </div>
     <div class="panel-body">
-        <form class="form-horizontal" role="form" id="article" method="post" action="<?php echo U('save');?>">
+        <form class="form-horizontal" enctype="multipart/form-data" role="form" id="article" method="post" action="<?php echo U('save');?>">
             <div class="form-group">
                 <label for="category" class="col-md-2 control-label">所属分类</label>
                 <div class="col-sm-3">
@@ -38,6 +38,13 @@
                 <label for="title" class="col-md-2 control-label">文章标题</label>
                 <div class="col-sm-3">
                     <input type="text" name="title" id="title" class="form-control col-xs-4" placeholder="文章标题" value="<?php echo ($article["title"]); ?>">
+                </div>
+            </div>
+			<div class="form-group">
+                <label for="litpic" class="col-md-2 control-label">缩略图</label>
+                <div class="col-sm-3">
+                    <input type="file" name="litpic" id="litpic" class="form-control col-xs-4" placeholder="缩略图" >
+					<?php if(!empty($article['lit_pic'])): ?><img src="/diguniu/Uploads/<?php echo ($article["lit_pic"]); ?>" /><?php endif; ?>
                 </div>
             </div>
             <div class="form-group">
