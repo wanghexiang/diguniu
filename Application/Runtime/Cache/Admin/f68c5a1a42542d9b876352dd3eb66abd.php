@@ -21,7 +21,7 @@
         <h3 class="panel-title">文章列表</h3>
     </div>
     <div class="panel-body">
-        <table class="table table-hover table-bordered table-condensed">
+        <table class="table table-hover table-bordered table-condensed table-striped">
             <tr>
                 <th>文章标题</th>
                 

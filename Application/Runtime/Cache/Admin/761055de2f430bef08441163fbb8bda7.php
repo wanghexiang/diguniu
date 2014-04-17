@@ -44,7 +44,7 @@
                 <label for="category" class="col-md-2 control-label">文章内容</label>
                 <div class="col-sm-8">
                     <!--style给定宽度可以影响编辑器的最终宽度-->
-                   <textarea name="content" style="width:100%;height:400px;visibility:hidden;"><?php echo ($content["content"]); ?></textarea>
+                   <textarea name="content" style="width:100%;height:400px;visibility:hidden;"><?php echo ($article["content"]); ?></textarea>
                 </div>
             </div>
             <input type="hidden" value="<?php echo ($article["id"]); ?>" name="id"/>

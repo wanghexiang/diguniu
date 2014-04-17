@@ -14,13 +14,9 @@ class ArticleController extends BaseController{
     public function edit(){
         $id=I("id");
         $article=M("article");
-        $content=M("arc_content");
         $article->where("id=$id");
-        $content->where("arc_id=$id");
         $result=$article->find();
-        $result2=$content->find();
         $this->assign("article",$result);
-        $this->assign("content",$result2);
         $category=M("category");
         $category_array= $category->select();
         $categories= \Admin\Controller\CommonController::tree($category_array);
@@ -44,25 +40,15 @@ class ArticleController extends BaseController{
         $article->title=$title;
         $article->create_time=time();
         $article->cate_id=$cate_id;
+		$article->content=$content;
         if(empty($id)){
-            $article_id=$article->add();
-            $article_content=M("arc_content");
-            $article_content->arc_id=$article_id;
-            $article_content->content=$content;
-           
-            $article_content->add();
-            if($article_id){
+            if($article->add()){
                 $this->success("插入成功");
             }else{
                 $this->error("插入失败");
             }
         }else{
-            $article->where("id='".$id."'");
-            $arc_content=M("arc_content");
-            $arc_content->where("arc_id='".$id."'");
-            $arc_content->content=$content;
-            $arc_content->save();
-           
+            $article->where("id='".$id."'"); 
             if($article->save()){
                 // echo $arc_content->getlastsql();exit();
                 $this->success("修改成功");
@@ -82,4 +68,15 @@ class ArticleController extends BaseController{
         $this->assign("articles",$result);
         $this->display();
     }
+	//删除文章
+	public function delete(){
+		$id=I("id");
+		$article=M("article");
+		$article->where("id='".$id."'");
+		if($article->delete()){
+			$this->success("删除成功!");
+		}else{
+			$this->error("删除失败!");
+		}
+	}
 }
