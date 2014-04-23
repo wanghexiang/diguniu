@@ -2,9 +2,9 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>Blank Page - Ace Admin</title>
+		<title>Form Wizard - Ace Admin</title>
 
-		<meta name="description" content="" />
+		<meta name="description" content="and Validation" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!--basic styles-->
@@ -14,15 +14,15 @@
 		<link rel="stylesheet" href="/diguniu/Public/ace/assets/css/font-awesome.min.css" />
 
 		<!--[if IE 7]>
-		  <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
+		  <link rel="stylesheet" href="/diguniu/Public/ace/assets/css/font-awesome-ie7.min.css" />
 		<![endif]-->
 
 		<!--page specific plugin styles-->
 
 		<!--fonts-->
-
+        <!--
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" />
-
+         -->
 		<!--ace styles-->
 
 		<link rel="stylesheet" href="/diguniu/Public/ace/assets/css/ace.min.css" />
@@ -30,7 +30,7 @@
 		<link rel="stylesheet" href="/diguniu/Public/ace/assets/css/ace-skins.min.css" />
 
 		<!--[if lte IE 8]>
-		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+		  <link rel="stylesheet" href="/diguniu/Public/ace/assets/css/ace-ie.min.css" />
 		<![endif]-->
 
 		<!--inline styles related to this page-->
@@ -431,7 +431,7 @@
 						</a>
 					</li>
 
-					<li>
+					<li class="active open">
 						<a href="#" class="dropdown-toggle">
 							<i class="icon-edit"></i>
 							<span class="menu-text"> Forms </span>
@@ -447,7 +447,7 @@
 								</a>
 							</li>
 
-							<li>
+							<li class="active">
 								<a href="form-wizard.html">
 									<i class="icon-double-angle-right"></i>
 									Wizard &amp; Validation
@@ -529,7 +529,7 @@
 						</ul>
 					</li>
 
-					<li class="active open">
+					<li>
 						<a href="#" class="dropdown-toggle">
 							<i class="icon-file-alt"></i>
 
@@ -563,7 +563,7 @@
 								</a>
 							</li>
 
-							<li class="active">
+							<li>
 								<a href="blank.html">
 									<i class="icon-double-angle-right"></i>
 									Blank Page
@@ -591,13 +591,13 @@
 						</li>
 
 						<li>
-							<a href="#">Other Pages</a>
+							<a href="#">Forms</a>
 
 							<span class="divider">
 								<i class="icon-angle-right arrow-icon"></i>
 							</span>
 						</li>
-						<li class="active">Blank Page</li>
+						<li class="active">Wizard &amp; Validation</li>
 					</ul><!--.breadcrumb-->
 
 					<div class="nav-search" id="nav-search">
@@ -609,16 +609,246 @@
 						</form>
 					</div><!--#nav-search-->
 				</div>
+				
+				<!--basic scripts-->
 
+		<!--[if !IE]>-->
+        <!--
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        -->
+		<!--<![endif]-->
+
+		<!--[if IE]>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<![endif]-->
+
+		<!--[if !IE]>-->
+
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='/diguniu/Public/ace/assets/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
+		</script>
+
+		<!--<![endif]-->
+
+		<!--[if IE]>
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='/diguniu/Public/ace/assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+		</script>
+		<![endif]-->
+		<script type="text/javascript">
+			if("ontouchend" in document) document.write("<script src='/diguniu/Public/ace/assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+		</script>
+		<script src="/diguniu/Public/ace/assets/js/bootstrap.min.js"></script>
+
+
+		<!--ace scripts-->
+
+		<script src="/diguniu/Public/ace/assets/js/ace-elements.min.js"></script>
+		<script src="/diguniu/Public/ace/assets/js/ace.min.js"></script>
+				
+								<link rel="stylesheet" href="/diguniu/Public/ace/assets/css/select2.css" />
 				<div class="page-content">
+					<div class="page-header position-relative">
+						<h1>
+							用户管理
+							<small>
+								<i class="icon-double-angle-right"></i>
+								添加用户
+							</small>
+						</h1>
+					</div><!--/.page-header-->
+
 					<div class="row-fluid">
 						<div class="span12">
 							<!--PAGE CONTENT BEGINS-->
+							
+
+							<div class="row-fluid">
+								<div class="span12">
+									<div class="widget-box">
+										<div class="widget-header widget-header-blue widget-header-flat">
+											<h4 class="lighter">填写用户信息</h4>
+
+											
+										</div>
+
+										<div class="widget-body">
+											<div class="widget-main">
+												<div class="row-fluid">
+												
+													<div class="step-content row-fluid position-relative" id="step-container">
+														<div class="step-pane active" id="step1">
+															<h3 class="lighter block green">在下面输入用户信息</h3>
+
+															<form  id="validation-form" method="post" action="<?php echo U('save');?>" />
+																<div class="control-group">
+																	<label class="control-label" for="username">用户名:</label>
+
+																	<div class="controls">
+																		<div class="span12">
+																			<input type="text" name="username" id="username" class="span4" />
+																		</div>
+																	</div>
+																</div>
+
+																<div class="control-group">
+																	<label class="control-label" for="password">密码:</label>
+
+																	<div class="controls">
+																		<div class="span12">
+																			<input type="password" name="password" id="password" class="span4" />
+																		</div>
+																	</div>
+																</div>
+
+																<div class="control-group">
+																	<label class="control-label" for="password2">确认密码:</label>
+
+																	<div class="controls">
+																		<div class="span12">
+																			<input type="password" name="password2" id="password2" class="span4" />
+																		</div>
+																	</div>
+																</div>
+																
+																<div class="control-group">
+																	<label class="control-label" for="email">邮箱:</label>
+
+																	<div class="controls">
+																		<div class="span12">
+																			<input type="email" name="email" id="email" class="span4" />
+																		</div>
+																	</div>
+																</div>
+
+															
+														</div>
+
+														
+													</div>
+
+													<hr />
+													<div class="form-actions">
+														<button type="button" class="btn btn-info">
+														<i class="icon-ok bigger-110"></i>
+															提交
+															</button>
+
+																	&nbsp; &nbsp; &nbsp;
+														<button type="reset" class="btn">
+														<i class="icon-undo bigger-110"></i>
+															重置
+														</button>
+														</div>
+													</form>
+												</div>
+											</div><!--/widget-main-->
+										</div><!--/widget-body-->
+									</div>
+								</div>
+							</div>
 
 							<!--PAGE CONTENT ENDS-->
 						</div><!--/.span-->
 					</div><!--/.row-fluid-->
 				</div><!--/.page-content-->
+
+				
+
+
+		<!--page specific plugin scripts-->
+
+		<script src="/diguniu/Public/ace/assets/js/fuelux/fuelux.wizard.min.js"></script>
+		<script src="/diguniu/Public/ace/assets/js/jquery.validate.min.js"></script>
+		<script src="/diguniu/Public/ace/assets/js/additional-methods.min.js"></script>
+		<script src="/diguniu/Public/ace/assets/js/bootbox.min.js"></script>
+		<script src="/diguniu/Public/ace/assets/js/jquery.maskedinput.min.js"></script>
+		<script src="/diguniu/Public/ace/assets/js/select2.min.js"></script>
+
+		<!--inline scripts related to this page-->
+
+		<script type="text/javascript">
+			$(function() {
+			
+				$('#validation-form').validate({
+					errorElement: 'span',
+					errorClass: 'help-inline',
+					focusInvalid: false,
+					rules: {
+						username: {
+							required: true,
+							email:true
+						},
+						password: {
+							required: true,
+							minlength: 5
+						},
+						password2: {
+							required: true,
+							minlength: 5,
+							equalTo: "#password"
+						},
+						email: {
+							required: true
+						},
+						
+					},
+			
+					messages: {
+						username:{
+							required:"请输入用户名",
+						},
+						email: {
+							required: "请输入邮箱.",
+							email: "邮箱格式不正确."
+						},
+						password: {
+							required: "请输入密码.",
+							minlength: "密码长度需大于5."
+						},
+						password2:"两次输入的密码不一致",
+					},
+			
+					invalidHandler: function (event, validator) { //display error alert on form submit   
+						$('.alert-error', $('.login-form')).show();
+					},
+			
+					highlight: function (e) {
+						$(e).closest('.control-group').removeClass('info').addClass('error');
+					},
+			
+					success: function (e) {
+						$(e).closest('.control-group').removeClass('error').addClass('info');
+						$(e).remove();
+					},
+			
+					errorPlacement: function (error, element) {
+						if(element.is(':checkbox') || element.is(':radio')) {
+							var controls = element.closest('.controls');
+							if(controls.find(':checkbox,:radio').length > 1) controls.append(error);
+							else error.insertAfter(element.nextAll('.lbl:eq(0)').eq(0));
+						}
+						else if(element.is('.select2')) {
+							error.insertAfter(element.siblings('[class*="select2-container"]:eq(0)'));
+						}
+						else if(element.is('.chzn-select')) {
+							error.insertAfter(element.siblings('[class*="chzn-container"]:eq(0)'));
+						}
+						else error.insertAfter(element);
+					},
+			
+					submitHandler: function (form) {
+					},
+					invalidHandler: function (form) {
+					}
+				});
+			
+				$('#modal-wizard .modal-header').ace_wizard();
+				$('#modal-wizard .wizard-actions .btn[data-dismiss=modal]').removeAttr('disabled');
+			})
+		</script>
+
+
 
 				<div class="ace-settings-container" id="ace-settings-container">
 					<div class="btn btn-app btn-mini btn-warning ace-settings-btn" id="ace-settings-btn">
@@ -658,9 +888,7 @@
 							<label class="lbl" for="ace-settings-rtl"> Right To Left (rtl)</label>
 						</div>
 					</div>
-					sdkjflskdjflksdjflsdk
 				</div><!--/#ace-settings-container-->
-		
 			</div><!--/.main-content-->
 		</div><!--/.main-container-->
 
@@ -668,44 +896,5 @@
 			<i class="icon-double-angle-up icon-only bigger-110"></i>
 		</a>
 
-		<!--basic scripts-->
-
-		<!--[if !IE]>-->
-
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-		<!--<![endif]-->
-
-		<!--[if IE]>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<![endif]-->
-
-		<!--[if !IE]>-->
-
-		<script type="text/javascript">
-			window.jQuery || document.write("<script src='/diguniu/Public/ace/assets/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
-		</script>
-
-		<!--<![endif]-->
-
-		<!--[if IE]>
-<script type="text/javascript">
- window.jQuery || document.write("<script src='/diguniu/Public/ace/assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
-</script>
-<![endif]-->
-
-		<script type="text/javascript">
-			if("ontouchend" in document) document.write("<script src='/diguniu/Public/ace/assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
-		</script>
-		<script src="/diguniu/Public/ace/assets/js/bootstrap.min.js"></script>
-
-		<!--page specific plugin scripts-->
-
-		<!--ace scripts-->
-
-		<script src="/diguniu/Public/ace/assets/js/ace-elements.min.js"></script>
-		<script src="/diguniu/Public/ace/assets/js/ace.min.js"></script>
-
-		<!--inline scripts related to this page-->
 	</body>
 </html>

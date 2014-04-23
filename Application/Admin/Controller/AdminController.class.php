@@ -1,6 +1,6 @@
 <?php
 namespace Admin\Controller;
-class IndexController extends BaseController {
+class AdminController extends BaseController {
 	/**
 	 *管理员列表
 	 */
