@@ -729,7 +729,7 @@
 
 													<hr />
 													<div class="form-actions">
-														<button type="button" class="btn btn-info">
+														<button type="submit" class="btn btn-info">
 														<i class="icon-ok bigger-110"></i>
 															提交
 															</button>
@@ -777,7 +777,6 @@
 					rules: {
 						username: {
 							required: true,
-							email:true
 						},
 						password: {
 							required: true,
