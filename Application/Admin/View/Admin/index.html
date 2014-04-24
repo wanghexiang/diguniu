@@ -84,7 +84,8 @@
 								</div><!--/span-->
 							</div><!--/row-->
 							<?php if($admin):?>
-							<div class="modal-footer">	
+							<div class="modal-footer">
+								<button class="btn btn-success btn-small " id="delete_all">删除选中</button>
 								{$page}
 							</div><!--PAGE CONTENT ENDS-->
 							<?php endif;?>
@@ -131,6 +132,13 @@
 					if( parseInt(off2.left) < parseInt(off1.left) + parseInt(w1 / 2) ) return 'right';
 					return 'left';
 				}
+				
+				//批量删除
+				$("#delete_all").click(function(){
+					if(confirm("确定删除这些数据吗？")){
+						;
+					}
+				});
 			});
 			
 		</script>
