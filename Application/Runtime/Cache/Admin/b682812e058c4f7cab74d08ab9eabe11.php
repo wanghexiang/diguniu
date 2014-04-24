@@ -646,14 +646,13 @@
 		<script src="/diguniu/Public/ace/assets/js/ace-elements.min.js"></script>
 		<script src="/diguniu/Public/ace/assets/js/ace.min.js"></script>
 				
-								<link rel="stylesheet" href="/diguniu/Public/ace/assets/css/select2.css" />
-				<div class="page-content">
+				﻿		<div class="page-content">				
 					<div class="page-header position-relative">
 						<h1>
 							用户管理
 							<small>
 								<i class="icon-double-angle-right"></i>
-								添加用户
+								用户列表
 							</small>
 						</h1>
 					</div><!--/.page-header-->
@@ -661,189 +660,126 @@
 					<div class="row-fluid">
 						<div class="span12">
 							<!--PAGE CONTENT BEGINS-->
-							
 
 							<div class="row-fluid">
 								<div class="span12">
-									<div class="widget-box">
-										<div class="widget-header widget-header-blue widget-header-flat">
-											<h4 class="lighter">填写用户信息</h4>
+									<table id="sample-table-1" class="table table-striped table-bordered table-hover">
+										<thead>
+											<tr>
+												<th class="center">
+													<label>
+														<input type="checkbox" />
+														<span class="lbl"></span>
+													</label>
+												</th>
+												<th>UID</th>
+												<th>用户名</th>
+												<th >邮箱</th>
 
-											
-										</div>
+												<th >
+													<i class="icon-time bigger-110 hidden-phone"></i>
+													上次登录时间
+												</th>
+												<th class="hidden-480">状态</th>
 
-										<div class="widget-body">
-											<div class="widget-main">
-												<div class="row-fluid">
-												
-													<div class="step-content row-fluid position-relative" id="step-container">
-														<div class="step-pane active" id="step1">
-															<h3 class="lighter block green">在下面输入用户信息</h3>
+												<th>操作</th>
+											</tr>
+										</thead>
 
-															<form  id="validation-form" method="post" action="<?php echo U('save');?>" />
-																<div class="control-group">
-																	<label class="control-label" for="username">用户名:</label>
+										<tbody>
+											<?php if(is_array($admin)): $i = 0; $__LIST__ = $admin;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+												<td class="center">
+													<label>
+														<input type="checkbox" value="<?php echo ($vo["id"]); ?>" />
+														<span class="lbl"></span>
+													</label>
+												</td>
 
-																	<div class="controls">
-																		<div class="span12">
-																			<input type="text" name="username" id="username" class="span4" value="<?php echo ($admin["username"]); ?>" />
-																		</div>
-																	</div>
-																</div>
+												<td>
+													<a href="#"><?php echo ($vo["id"]); ?></a>
+												</td> 
+												<td><?php echo ($vo["username"]); ?></td>
+												<td ><?php echo ($vo["email"]); ?></td>
+												<td ><?php echo (date("Y-m-d H:i:s",$vo["login_time"])); ?></td>
 
-																<div class="control-group">
-																	<label class="control-label" for="password">密码:</label>
+												<td class="hidden-480">
+													<span class="label label-warning">Expiring</span>
+												</td>
 
-																	<div class="controls">
-																		<div class="span12">
-																			<input type="password" name="password" id="password" class="span4" />
-																		</div>
-																	</div>
-																</div>
-
-																<div class="control-group">
-																	<label class="control-label" for="password2">确认密码:</label>
-
-																	<div class="controls">
-																		<div class="span12">
-																			<input type="password" name="password2" id="password2" class="span4" />
-																		</div>
-																	</div>
-																</div>
-																
-																<div class="control-group">
-																	<label class="control-label" for="email">邮箱:</label>
-
-																	<div class="controls">
-																		<div class="span12">
-																			<input type="email" name="email" id="email" class="span4" value="<?php echo ($admin["email"]); ?>" />
-																		</div>
-																	</div>
-																</div>
-																<input type="hidden" name="id" value="<?php echo ($admin["id"]); ?>"/>
-															
-														</div>
-
+												<td>
+													<div class="">
 														
+														
+														<a class="btn btn-mini btn-info" href="<?php echo U('edit?id='.$vo['id']);?>">
+														
+															<i class="icon-edit bigger-120"></i>
+															
+														</a>
+														
+														<a class="btn btn-mini btn-danger" href="<?php echo U('del?id='.$vo['id']);?>" onclick="return confirm('确定删除吗？')">
+															<i class="icon-trash bigger-120"></i>
+														</a>
+
 													</div>
 
-													<hr />
-													<div class="form-actions">
-														<button type="submit" class="btn btn-info">
-														<i class="icon-ok bigger-110"></i>
-															提交
-															</button>
-
-																	&nbsp; &nbsp; &nbsp;
-														<button type="reset" class="btn">
-														<i class="icon-undo bigger-110"></i>
-															重置
-														</button>
-														</div>
-													</form>
-												</div>
-											</div><!--/widget-main-->
-										</div><!--/widget-body-->
-									</div>
-								</div>
-							</div>
-
-							<!--PAGE CONTENT ENDS-->
+													
+												</td>
+											</tr><?php endforeach; endif; else: echo "" ;endif; ?>					
+										</tbody>
+									</table>
+								</div><!--/span-->
+							</div><!--/row-->
+							<?php if($admin):?>
+							<div class="modal-footer">	
+								<?php echo ($page); ?>
+							</div><!--PAGE CONTENT ENDS-->
+							<?php endif;?>
 						</div><!--/.span-->
 					</div><!--/.row-fluid-->
 				</div><!--/.page-content-->
+				<!--page specific plugin scripts-->
 
-				
-
-
-		<!--page specific plugin scripts-->
-
-		<script src="/diguniu/Public/ace/assets/js/fuelux/fuelux.wizard.min.js"></script>
-		<script src="/diguniu/Public/ace/assets/js/jquery.validate.min.js"></script>
-		<script src="/diguniu/Public/ace/assets/js/additional-methods.min.js"></script>
-		<script src="/diguniu/Public/ace/assets/js/bootbox.min.js"></script>
-		<script src="/diguniu/Public/ace/assets/js/jquery.maskedinput.min.js"></script>
-		<script src="/diguniu/Public/ace/assets/js/select2.min.js"></script>
-
+		<script src="/diguniu/Public/ace/assets/js/jquery.dataTables.min.js"></script>
+		<script src="/diguniu/Public/ace/assets/js/jquery.dataTables.bootstrap.js"></script>
 		<!--inline scripts related to this page-->
 
 		<script type="text/javascript">
 			$(function() {
-			
-				$('#validation-form').validate({
-					errorElement: 'span',
-					errorClass: 'help-inline',
-					focusInvalid: false,
-					rules: {
-						username: {
-							required: true,
-						},
-						password: {
-							required: true,
-							minlength: 5
-						},
-						password2: {
-							required: true,
-							minlength: 5,
-							equalTo: "#password"
-						},
-						email: {
-							required: true
-						},
+				var oTable1 = $('#sample-table-2').dataTable( {
+				"aoColumns": [
+			      { "bSortable": false },
+			      null, null,null, null, null,
+				  { "bSortable": false }
+				] } );
+				
+				
+				$('table th input:checkbox').on('click' , function(){
+					var that = this;
+					$(this).closest('table').find('tr > td:first-child input:checkbox')
+					.each(function(){
+						this.checked = that.checked;
+						$(this).closest('tr').toggleClass('selected');
+					});
 						
-					},
-			
-					messages: {
-						username:{
-							required:"请输入用户名",
-						},
-						email: {
-							required: "请输入邮箱.",
-							email: "邮箱格式不正确."
-						},
-						password: {
-							required: "请输入密码.",
-							minlength: "密码长度需大于5."
-						},
-						password2:"两次输入的密码不一致",
-					},
-			
-					invalidHandler: function (event, validator) { //display error alert on form submit   
-						$('.alert-error', $('.login-form')).show();
-					},
-			
-					highlight: function (e) {
-						$(e).closest('.control-group').removeClass('info').addClass('error');
-					},
-			
-					success: function (e) {
-						$(e).closest('.control-group').removeClass('error').addClass('info');
-						$(e).remove();
-					},
-			
-					errorPlacement: function (error, element) {
-						if(element.is(':checkbox') || element.is(':radio')) {
-							var controls = element.closest('.controls');
-							if(controls.find(':checkbox,:radio').length > 1) controls.append(error);
-							else error.insertAfter(element.nextAll('.lbl:eq(0)').eq(0));
-						}
-						else if(element.is('.select2')) {
-							error.insertAfter(element.siblings('[class*="select2-container"]:eq(0)'));
-						}
-						else if(element.is('.chzn-select')) {
-							error.insertAfter(element.siblings('[class*="chzn-container"]:eq(0)'));
-						}
-						else error.insertAfter(element);
-					},
-			
-					
 				});
 			
-				$('#modal-wizard .modal-header').ace_wizard();
-				$('#modal-wizard .wizard-actions .btn[data-dismiss=modal]').removeAttr('disabled');
-			})
+			
+				$('[data-rel="tooltip"]').tooltip({placement: tooltip_placement});
+				function tooltip_placement(context, source) {
+					var $source = $(source);
+					var $parent = $source.closest('table')
+					var off1 = $parent.offset();
+					var w1 = $parent.width();
+			
+					var off2 = $source.offset();
+					var w2 = $source.width();
+			
+					if( parseInt(off2.left) < parseInt(off1.left) + parseInt(w1 / 2) ) return 'right';
+					return 'left';
+				}
+			});
+			
 		</script>
-
 
 
 				<div class="ace-settings-container" id="ace-settings-container">

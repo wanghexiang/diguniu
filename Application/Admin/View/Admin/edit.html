@@ -38,7 +38,7 @@
 
 																	<div class="controls">
 																		<div class="span12">
-																			<input type="text" name="username" id="username" class="span4" />
+																			<input type="text" name="username" id="username" class="span4" value="{$admin.username}" />
 																		</div>
 																	</div>
 																</div>
@@ -68,11 +68,11 @@
 
 																	<div class="controls">
 																		<div class="span12">
-																			<input type="email" name="email" id="email" class="span4" />
+																			<input type="email" name="email" id="email" class="span4" value="{$admin.email}" />
 																		</div>
 																	</div>
 																</div>
-
+																<input type="hidden" name="id" value="{$admin.id}"/>
 															
 														</div>
 
@@ -188,10 +188,7 @@
 						else error.insertAfter(element);
 					},
 			
-					submitHandler: function (form) {
-					},
-					invalidHandler: function (form) {
-					}
+					
 				});
 			
 				$('#modal-wizard .modal-header').ace_wizard();
