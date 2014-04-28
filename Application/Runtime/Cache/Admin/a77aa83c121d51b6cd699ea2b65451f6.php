@@ -697,7 +697,7 @@
 																	<div class="controls">
 																		<div class="span12">
 																			<select name="pid" id="pid">
-																			<?php if(is_array($menu)): $i = 0; $__LIST__ = $menu;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["html"]); echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>	
+																			<?php if(is_array($menus)): $i = 0; $__LIST__ = $menus;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["html"]); echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>	
 																			</select>
 																		</div>
 																	</div>
@@ -708,7 +708,7 @@
 
 																	<div class="controls">
 																		<div class="span12">
-																			<input type="text" name="url" id="url" class="span4" />
+																			<input type="text" name="url" id="url" class="span4" value="<?php echo ($menu["url"]); ?>" />
 																		</div>
 																	</div>
 																</div>
@@ -726,7 +726,7 @@
 																		
 																	</div>
 																</div>
-																<input type="hidden" name="id" value="<?php echo ($menu["id"]); ?>"/>
+																<input type="hidden" name="menu_id" value="<?php echo ($menu["id"]); ?>"/>
 															
 														</div>
 

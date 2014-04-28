@@ -12,38 +12,38 @@ class MenuController extends BaseController {
 	 *新增、编辑菜单
 	 */
 	public function edit(){
-		$menu=M("menu")->select();
+		$menus=M("menu")->select();
 		//print_r($menu);
-		$result=CommonController::tree($menu);
-		$this->assign("menu",$result);
+		$result=CommonController::tree($menus);
+		$this->assign("menus",$result);
+		$menu=M("menu")->where("id='".I('id')."'")->find();
+		$this->assign("menu",$menu);
 		$this->display();
 	}
 	/**
 	 *保存数据
 	 */
 	public function save(){
-		$id=I("id");
-		$admin=M("admin");
-		$admin->username=I("username");
-		$admin->password=md5(I("password"));
-		$admin->email=I("email");
-		if(empty($id)){
-			$admin->add_time=time();
-			if($admin->add()){
-				$this->success("新增成功！");
-			}else{
-				$this->error("新增失败!");
-			}
+		$menu_id=I("menu_id");
+		$menu=M("menu");
+		$menu->create();
+		if(!empty($menu_id)){
+		if($menu->add()){
+			$this->success("新增成功！");
 		}else{
-			if($admin->save()){
-				$this->success("保存成功!");
+			$this->error("新增失败！");
+		}
+		}else{
+			if($menu->save()){
+				$this->success("保存成功！");
 			}else{
 				$this->error("保存失败!");
 			}
 		}
+		
 	}
 	/**
-	 *删除管理员
+	 *删除
 	 */
 	public function del(){
 		$id=I("id");
