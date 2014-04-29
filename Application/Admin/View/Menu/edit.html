@@ -80,7 +80,7 @@
 																		
 																	</div>
 																</div>
-																<input type="hidden" name="menu_id" value="{$menu.id}"/>
+																<input type="hidden" name="menuid" value="{$menu.id}"/>
 															
 														</div>
 
@@ -112,7 +112,7 @@
 						</div><!--/.span-->
 					</div><!--/.row-fluid-->
 				</div><!--/.page-content-->
-				<div class="modal fade" id="myModal" style="width:800px;padding-left:20px;left:30%">
+				<div class="modal fade" id="myModal">
 		
 						<div class="row-fluid">
 								<div class="row-fluid">
@@ -628,7 +628,7 @@
 				$(".row-fluid").find("li").click(function(){
 					//$("#icon").val($(this).html());
 					var icon=$(this).find("i").html();
-					alert(icon);
+					//alert(icon);
 					//$('#myModal').modal('hide');
 				});
 			})

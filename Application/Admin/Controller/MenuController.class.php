@@ -24,19 +24,25 @@ class MenuController extends BaseController {
 	 *保存数据
 	 */
 	public function save(){
-		$menu_id=I("menu_id");
+		$menuid=I("menuid");
 		$menu=M("menu");
-		$menu->create();
-		if(!empty($menu_id)){
-		if($menu->add()){
-			$this->success("新增成功！");
-		}else{
-			$this->error("新增失败！");
+	
+		$data['name']=I("name");
+		$data['url']=I("url");
+		$data['icon']=I("icon");
+		$data['pid']=I("pid");
+		if(empty($menuid)){
+			if($menu->add($data)){
+				$this->success("新增成功！");
+			}else{
+				$this->error("新增失败！");
 		}
 		}else{
+			$menu->where("id=$menuid");
 			if($menu->save()){
 				$this->success("保存成功！");
 			}else{
+				
 				$this->error("保存失败!");
 			}
 		}
