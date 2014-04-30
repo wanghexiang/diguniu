@@ -30,7 +30,9 @@ class MenuController extends BaseController {
 		$data['name']=I("name");
 		$data['url']=I("url");
 		$data['icon']=I("icon");
+		//print_r(I("icon"));exit();
 		$data['pid']=I("pid");
+		$data['sort']=I('sort');
 		if(empty($menuid)){
 			if($menu->add($data)){
 				$this->success("新增成功！");

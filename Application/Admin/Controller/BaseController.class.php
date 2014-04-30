@@ -11,7 +11,7 @@ class BaseController extends Controller {
 		$this->assign('htmltree',$htmltree);
 	}
 	//菜单转换成递归数组
-	public static function maketree($menus, $pid = '0',$html1="",$html2="",$level="0") {
+	public static function maketree($menus, $pid = '1',$html1="",$html2="",$level="0") {
        $arr=array();
 	   foreach ($menus as $v) {
             if ($v['pid'] == $pid) {
@@ -44,7 +44,7 @@ class BaseController extends Controller {
 				}
 				//其它级都显示图片
 				else{
-					$html.=$v['icon'];
+					$html.=htmlspecialchars_decode($v['icon']);
 				}	
 				$html.='<span class="menu-text">'.$v['name'].'</span><b class="arrow icon-angle-down"></b></a><ul class="submenu">';
 				$sub_html=self::htmltree($v['submenu']);
@@ -60,9 +60,14 @@ class BaseController extends Controller {
 				if($v['level']==1){
 					$html.='<i class="icon-double-angle-right"></i>';
 				}else{
-					$html.=$v['icon'];
-				}	
-				$html.=''.$v['name'].'</a></li>';
+					$html.=htmlspecialchars_decode($v['icon']);
+				}
+				if($v['level']==0){
+					$html.='<span class="menu-text"> '.$v['name'].' </span>';
+				}else{	
+					$html.=$v['name'];
+				}
+				$html.='</a></li>';
 			}
 		} //print_r($html);echo "<br/>";
 		return $html;

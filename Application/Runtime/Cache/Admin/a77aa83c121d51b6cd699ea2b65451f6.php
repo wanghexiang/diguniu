@@ -425,7 +425,6 @@
 						<div class="span12">
 							<!--PAGE CONTENT BEGINS-->
 							
-
 							<div class="row-fluid">
 								<div class="span12">
 									<div class="widget-box">
@@ -475,20 +474,30 @@
 																		</div>
 																	</div>
 																</div>
-																
+																<div class="control-group">
+																	<label class="control-label" for="sort">排序:</label>
+
+																	<div class="controls">
+																		<div class="span12">
+																			<input type="text" name="sort" id="sort" class="span4" value="<?php echo ($menu["sort"]); ?>" />
+																		</div>
+																	</div>
+																</div>
 																<div class="control-group">
 																	<label class="control-label" for="icon">图标:</label>
 
 																	<div class="controls">
-																		<div class="span10 input-append input-prepend">
+																		<div class="span10 input-append input-prepend input-icon">
 			
 																			<input type="text" name="icon" id="icon" class="span4" value="<?php echo ($menu["icon"]); ?>" />
+																			<i></i>
 																			<span class="btn btn-small btn-primary" data-toggle="modal" data-target="#myModal">选择</span>
 									
 																		</div>
 																		
 																	</div>
 																</div>
+																
 																<input type="hidden" name="menuid" value="<?php echo ($menu["id"]); ?>"/>
 															
 														</div>
@@ -508,7 +517,7 @@
 														<i class="icon-undo bigger-110"></i>
 															重置
 														</button>
-														</div>
+													</div>
 													</form>
 												</div>
 											</div><!--/widget-main-->
@@ -521,7 +530,7 @@
 						</div><!--/.span-->
 					</div><!--/.row-fluid-->
 				</div><!--/.page-content-->
-				<div class="modal fade" id="myModal">
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="width:800px;left:40%">
 		
 						<div class="row-fluid">
 								<div class="row-fluid">
@@ -957,17 +966,16 @@
 					errorClass: 'help-inline',
 					focusInvalid: false,
 					rules: {
-						username: {
+						name: {
 							required: true,
 						},
-						password: {
+						url: {
 							required: true,
-							minlength: 5
+							
 						},
-						password2: {
+						pid: {
 							required: true,
-							minlength: 5,
-							equalTo: "#password"
+							
 						},
 						email: {
 							required: true
@@ -1036,9 +1044,13 @@
 				//选择图标
 				$(".row-fluid").find("li").click(function(){
 					//$("#icon").val($(this).html());
-					var icon=$(this).find("i").html();
-					//alert(icon);
-					//$('#myModal').modal('hide');
+					var icon=$(this).find("i").prop("outerHTML");
+					var icon_class=$(this).find("i").attr("class");
+					//alert(icon_class);
+					$("#icon").val(icon);
+					$("#icon").next("i").removeClass();
+					$("#icon").next("i").addClass(icon_class);
+					$('#myModal').modal('hide');
 				});
 			})
 		</script>
