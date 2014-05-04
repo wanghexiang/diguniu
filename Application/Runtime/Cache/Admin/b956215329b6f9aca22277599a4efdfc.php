@@ -461,12 +461,10 @@
 												<td ><?php echo ($vo["sort"]); ?></td>
 												<td ><?php echo htmlspecialchars_decode($vo['icon']); ?></td>
 
-								
+												
 												<td>
 													<div class="">
-														
-														
-														
+
 														<a class="btn btn-mini btn-info" href="<?php echo U('index?pid='.$vo['id']);?>" title="进入下一级">
 														
 															<i class="icon-edit bigger-120"></i>
