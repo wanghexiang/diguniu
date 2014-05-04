@@ -1,4 +1,4 @@
-				<link rel="stylesheet" href="__PUBLIC__/ace/assets/css/select2.css" />
+﻿				<link rel="stylesheet" href="__PUBLIC__/ace/assets/css/select2.css" />
 				<div class="page-content">
 					<div class="page-header position-relative">
 						<h1>
@@ -49,7 +49,7 @@
 																		<div class="span12">
 																			<select name="pid" id="pid">
 																			<volist name="menus" id="vo">
-																				<option value="{$vo.id}">{$vo.html}{$vo.name}</option>
+																				<option value="{$vo.id}" <?php if($vo['id']==$menu['pid']):?> "selected" <?php endif;?>> {$vo.html}{$vo.name}</option>
 																			</volist>	
 																			</select>
 																		</div>
@@ -568,25 +568,22 @@
 							required: true,
 							
 						},
-						email: {
-							required: true
-						},
+						
 						
 					},
 			
 					messages: {
-						username:{
-							required:"请输入用户名",
+						name:{
+							required:"请输入菜单名称",
 						},
-						email: {
-							required: "请输入邮箱.",
-							email: "邮箱格式不正确."
+						url: {
+							required: "请输入菜单地址.",
+							
 						},
-						password: {
-							required: "请输入密码.",
-							minlength: "密码长度需大于5."
-						},
-						password2:"两次输入的密码不一致",
+						pid: {
+							reeuried:"请选择上级分类",
+						}
+						
 					},
 			
 					invalidHandler: function (event, validator) { //display error alert on form submit   

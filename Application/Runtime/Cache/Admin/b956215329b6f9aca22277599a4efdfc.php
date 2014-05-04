@@ -334,245 +334,8 @@
 					</div>
 				</div><!--#sidebar-shortcuts-->
 
-				<ul class="nav nav-list">
-					<li>
-						<a href="index.html">
-							<i class="icon-dashboard"></i>
-							<span class="menu-text"> Dashboard </span>
-						</a>
-					</li>
-
-					<li>
-						<a href="typography.html">
-							<i class="icon-text-width"></i>
-							<span class="menu-text"> Typography </span>
-						</a>
-					</li>
-
-					<li>
-						<a href="#" class="dropdown-toggle">
-							<i class="icon-desktop"></i>
-							<span class="menu-text"> UI Elements </span>
-
-							<b class="arrow icon-angle-down"></b>
-						</a>
-
-						<ul class="submenu">
-							<li>
-								<a href="elements.html">
-									<i class="icon-double-angle-right"></i>
-									Elements
-								</a>
-							</li>
-
-							<li>
-								<a href="buttons.html">
-									<i class="icon-double-angle-right"></i>
-									Buttons &amp; Icons
-								</a>
-							</li>
-
-							<li>
-								<a href="treeview.html">
-									<i class="icon-double-angle-right"></i>
-									Treeview
-								</a>
-							</li>
-
-							<li>
-								<a href="#" class="dropdown-toggle">
-									<i class="icon-double-angle-right"></i>
-
-									Three Level Menu
-									<b class="arrow icon-angle-down"></b>
-								</a>
-
-								<ul class="submenu">
-									<li>
-										<a href="#">
-											<i class="icon-leaf"></i>
-											Item #1
-										</a>
-									</li>
-
-									<li>
-										<a href="#" class="dropdown-toggle">
-											<i class="icon-pencil"></i>
-
-											4th level
-											<b class="arrow icon-angle-down"></b>
-										</a>
-
-										<ul class="submenu">
-											<li>
-												<a href="#">
-													<i class="icon-plus"></i>
-													Add Product
-												</a>
-											</li>
-
-											<li>
-												<a href="#">
-													<i class="icon-eye-open"></i>
-													View Products
-												</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-
-					<li>
-						<a href="tables.html">
-							<i class="icon-list"></i>
-							<span class="menu-text"> Tables </span>
-						</a>
-					</li>
-
-					<li class="active open">
-						<a href="#" class="dropdown-toggle">
-							<i class="icon-edit"></i>
-							<span class="menu-text"> Forms </span>
-
-							<b class="arrow icon-angle-down"></b>
-						</a>
-
-						<ul class="submenu">
-							<li>
-								<a href="form-elements.html">
-									<i class="icon-double-angle-right"></i>
-									Form Elements
-								</a>
-							</li>
-
-							<li class="active">
-								<a href="form-wizard.html">
-									<i class="icon-double-angle-right"></i>
-									Wizard &amp; Validation
-								</a>
-							</li>
-
-							<li>
-								<a href="wysiwyg.html">
-									<i class="icon-double-angle-right"></i>
-									Wysiwyg &amp; Markdown
-								</a>
-							</li>
-						</ul>
-					</li>
-
-					<li>
-						<a href="widgets.html">
-							<i class="icon-list-alt"></i>
-							<span class="menu-text"> Widgets </span>
-						</a>
-					</li>
-
-					<li>
-						<a href="calendar.html">
-							<i class="icon-calendar"></i>
-
-							<span class="menu-text">
-								Calendar
-								<span class="badge badge-transparent tooltip-error" title="2&nbsp;Important&nbsp;Events">
-									<i class="icon-warning-sign red bigger-130"></i>
-								</span>
-							</span>
-						</a>
-					</li>
-
-					<li>
-						<a href="gallery.html">
-							<i class="icon-picture"></i>
-							<span class="menu-text"> Gallery </span>
-						</a>
-					</li>
-
-					<li>
-						<a href="#" class="dropdown-toggle">
-							<i class="icon-tag"></i>
-							<span class="menu-text"> More Pages </span>
-
-							<b class="arrow icon-angle-down"></b>
-						</a>
-
-						<ul class="submenu">
-							<li>
-								<a href="profile.html">
-									<i class="icon-double-angle-right"></i>
-									User Profile
-								</a>
-							</li>
-
-							<li>
-								<a href="pricing.html">
-									<i class="icon-double-angle-right"></i>
-									Pricing Tables
-								</a>
-							</li>
-
-							<li>
-								<a href="invoice.html">
-									<i class="icon-double-angle-right"></i>
-									Invoice
-								</a>
-							</li>
-
-							<li>
-								<a href="login.html">
-									<i class="icon-double-angle-right"></i>
-									Login &amp; Register
-								</a>
-							</li>
-						</ul>
-					</li>
-
-					<li>
-						<a href="#" class="dropdown-toggle">
-							<i class="icon-file-alt"></i>
-
-							<span class="menu-text">
-								Other Pages
-								<span class="badge badge-primary ">4</span>
-							</span>
-
-							<b class="arrow icon-angle-down"></b>
-						</a>
-
-						<ul class="submenu">
-							<li>
-								<a href="error-404.html">
-									<i class="icon-double-angle-right"></i>
-									Error 404
-								</a>
-							</li>
-
-							<li>
-								<a href="error-500.html">
-									<i class="icon-double-angle-right"></i>
-									Error 500
-								</a>
-							</li>
-
-							<li>
-								<a href="grid.html">
-									<i class="icon-double-angle-right"></i>
-									Grid
-								</a>
-							</li>
-
-							<li>
-								<a href="blank.html">
-									<i class="icon-double-angle-right"></i>
-									Blank Page
-								</a>
-							</li>
-						</ul>
-					</li>
-				</ul><!--/.nav-list-->
-
+				<?php echo ($htmltree); ?>
+				
 				<div class="sidebar-collapse" id="sidebar-collapse">
 					<i class="icon-double-angle-left"></i>
 				</div>
@@ -646,13 +409,13 @@
 		<script src="/diguniu/Public/ace/assets/js/ace-elements.min.js"></script>
 		<script src="/diguniu/Public/ace/assets/js/ace.min.js"></script>
 				
-				﻿<div class="page-content">
+				﻿		<div class="page-content">				
 					<div class="page-header position-relative">
 						<h1>
-							Treeview
+							菜单管理
 							<small>
 								<i class="icon-double-angle-right"></i>
-								with selectable items(single &amp; multiple) and custom icons
+								菜单列表
 							</small>
 						</h1>
 					</div><!--/.page-header-->
@@ -662,77 +425,132 @@
 							<!--PAGE CONTENT BEGINS-->
 
 							<div class="row-fluid">
-								<div class="widget-box span6">
-									<div class="widget-header header-color-blue2">
-										<h4 class="lighter smaller">Choose Categories</h4>
-									</div>
+								<div class="span12">
+									<table id="sample-table-1" class="table table-striped table-bordered table-hover">
+										<thead>
+											<tr>
+												<th class="center">
+													<label>
+														<input type="checkbox" />
+														<span class="lbl"></span>
+													</label>
+												</th>
+												<th>ID</th>
+												<th>名称</th>
+												<th >URL</th>
+												<th>排序</th>
+												<th>图标</th>
+												<th>操作</th>
+											</tr>
+										</thead>
 
-									<div class="widget-body">
-										<div class="widget-main padding-8">
-											<div id="tree1" class="tree"></div>
-										</div>
-									</div>
-								</div>
+										<tbody>
+											<?php if(is_array($menus)): $i = 0; $__LIST__ = $menus;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+												<td class="center">
+													<label>
+														<input type="checkbox" value="<?php echo ($vo["id"]); ?>" />
+														<span class="lbl"></span>
+													</label>
+												</td>
+
+												<td>
+													<a href="#"><?php echo ($vo["id"]); ?></a>
+												</td> 
+												<td><?php echo ($vo["name"]); ?></td>
+												<td ><?php echo ($vo["url"]); ?></td>
+												<td ><?php echo ($vo["sort"]); ?></td>
+												<td ><?php echo htmlspecialchars_decode($vo['icon']); ?></td>
 
 								
-							</div>
+												<td>
+													<div class="">
+														
+														
+														
+														<a class="btn btn-mini btn-info" href="<?php echo U('index?pid='.$vo['id']);?>" title="进入下一级">
+														
+															<i class="icon-edit bigger-120"></i>
+															
+														</a>
+														<a class="btn btn-mini btn-info" href="<?php echo U('edit?id='.$vo['id']);?>" title="编辑">
+														
+															<i class="icon-edit bigger-120"></i>
+															
+														</a>
+														
+														<a class="btn btn-mini btn-danger" href="<?php echo U('del?id='.$vo['id']);?>" onclick="return confirm('确定删除吗？')" title="删除">
+															<i class="icon-trash bigger-120"></i>
+														</a>
 
-							<script type="text/javascript">
-								var $assets = "assets";//this will be used in fuelux.tree-sampledata.js
-							</script>
+													</div>
 
-							<!--PAGE CONTENT ENDS-->
+													
+												</td>
+											</tr><?php endforeach; endif; else: echo "" ;endif; ?>					
+										</tbody>
+									</table>
+								</div><!--/span-->
+							</div><!--/row-->
+							<?php if($menus):?>
+							<div class="modal-footer">
+								<button class="btn btn-success btn-small " id="delete_all">删除选中</button>
+								<?php echo ($page); ?>
+							</div><!--PAGE CONTENT ENDS-->
+							<?php endif;?>
 						</div><!--/.span-->
 					</div><!--/.row-fluid-->
 				</div><!--/.page-content-->
-				
-		<!--page specific plugin scripts-->
+				<!--page specific plugin scripts-->
 
-		<script src="/diguniu/Public/ace/assets/js/fuelux/data/fuelux.tree-sampledata.js"></script>
-		<script src="/diguniu/Public/ace/assets/js/fuelux/fuelux.tree.min.js"></script>
+		<script src="/diguniu/Public/ace/assets/js/jquery.dataTables.min.js"></script>
+		<script src="/diguniu/Public/ace/assets/js/jquery.dataTables.bootstrap.js"></script>
 		<!--inline scripts related to this page-->
 
 		<script type="text/javascript">
-			$(function(){
-
-		$('#tree1').ace_tree({
-			dataSource: treeDataSource ,
-			multiSelect:true,
-			loadingHTML:'<div class="tree-loading"><i class="icon-refresh icon-spin blue"></i></div>',
-			'open-icon' : 'icon-minus',
-			'close-icon' : 'icon-plus',
-			'selectable' : true,
-			'selected-icon' : 'icon-ok',
-			'unselected-icon' : 'icon-remove'
-		});
-
-		$('#tree2').ace_tree({
-			dataSource: treeDataSource2 ,
-			loadingHTML:'<div class="tree-loading"><i class="icon-refresh icon-spin blue"></i></div>',
-			'open-icon' : 'icon-folder-open',
-			'close-icon' : 'icon-folder-close',
-			'selectable' : false,
-			'selected-icon' : null,
-			'unselected-icon' : null
-		});
-
-
-
-		/**
-		$('#tree1').on('loaded', function (evt, data) {
-		});
-
-		$('#tree1').on('opened', function (evt, data) {
-		});
-
-		$('#tree1').on('closed', function (evt, data) {
-		});
-
-		$('#tree1').on('selected', function (evt, data) {
-		});
-		*/
-});
+			$(function() {
+				var oTable1 = $('#sample-table-2').dataTable( {
+				"aoColumns": [
+			      { "bSortable": false },
+			      null, null,null, null, null,
+				  { "bSortable": false }
+				] } );
+				
+				
+				$('table th input:checkbox').on('click' , function(){
+					var that = this;
+					$(this).closest('table').find('tr > td:first-child input:checkbox')
+					.each(function(){
+						this.checked = that.checked;
+						$(this).closest('tr').toggleClass('selected');
+					});
+						
+				});
+			
+			
+				$('[data-rel="tooltip"]').tooltip({placement: tooltip_placement});
+				function tooltip_placement(context, source) {
+					var $source = $(source);
+					var $parent = $source.closest('table')
+					var off1 = $parent.offset();
+					var w1 = $parent.width();
+			
+					var off2 = $source.offset();
+					var w2 = $source.width();
+			
+					if( parseInt(off2.left) < parseInt(off1.left) + parseInt(w1 / 2) ) return 'right';
+					return 'left';
+				}
+				
+				//批量删除
+				$("#delete_all").click(function(){
+					if(confirm("确定删除这些数据吗？")){
+						;
+					}
+				});
+			});
+			
 		</script>
+
 
 				<div class="ace-settings-container" id="ace-settings-container">
 					<div class="btn btn-app btn-mini btn-warning ace-settings-btn" id="ace-settings-btn">

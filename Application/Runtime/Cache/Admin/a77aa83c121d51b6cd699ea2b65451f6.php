@@ -409,7 +409,7 @@
 		<script src="/diguniu/Public/ace/assets/js/ace-elements.min.js"></script>
 		<script src="/diguniu/Public/ace/assets/js/ace.min.js"></script>
 				
-								<link rel="stylesheet" href="/diguniu/Public/ace/assets/css/select2.css" />
+				﻿				<link rel="stylesheet" href="/diguniu/Public/ace/assets/css/select2.css" />
 				<div class="page-content">
 					<div class="page-header position-relative">
 						<h1>
@@ -459,7 +459,7 @@
 																	<div class="controls">
 																		<div class="span12">
 																			<select name="pid" id="pid">
-																			<?php if(is_array($menus)): $i = 0; $__LIST__ = $menus;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["html"]); echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>	
+																			<?php if(is_array($menus)): $i = 0; $__LIST__ = $menus;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>" <?php if($vo['id']==$menu['pid']):?> "selected" <?php endif;?>> <?php echo ($vo["html"]); echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>	
 																			</select>
 																		</div>
 																	</div>
@@ -977,25 +977,22 @@
 							required: true,
 							
 						},
-						email: {
-							required: true
-						},
+						
 						
 					},
 			
 					messages: {
-						username:{
-							required:"请输入用户名",
+						name:{
+							required:"请输入菜单名称",
 						},
-						email: {
-							required: "请输入邮箱.",
-							email: "邮箱格式不正确."
+						url: {
+							required: "请输入菜单地址.",
+							
 						},
-						password: {
-							required: "请输入密码.",
-							minlength: "密码长度需大于5."
-						},
-						password2:"两次输入的密码不一致",
+						pid: {
+							reeuried:"请选择上级分类",
+						}
+						
 					},
 			
 					invalidHandler: function (event, validator) { //display error alert on form submit   

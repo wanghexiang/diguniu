@@ -5,7 +5,8 @@ class MenuController extends BaseController {
 	 *菜单列表
 	 */
     public function index(){
-		
+		$menus=M("menu")->where("pid='".I('pid',1)."'")->select();
+		$this->assign("menus",$menus);
         $this->display();
     }
 	/**
@@ -27,7 +28,7 @@ class MenuController extends BaseController {
 		$menuid=I("menuid");
 		$menu=M("menu");
 	
-		$data['name']=I("name");
+		$data['name']=I("name"); 
 		$data['url']=I("url");
 		$data['icon']=I("icon");
 		//print_r(I("icon"));exit();
@@ -40,12 +41,13 @@ class MenuController extends BaseController {
 				$this->error("新增失败！");
 		}
 		}else{
-			$menu->where("id=$menuid");
-			if($menu->save()){
+			$menu->where("id='".$menuid."'");
+			if($menu->save($data)){
 				$this->success("保存成功！");
 			}else{
-				
-				$this->error("保存失败!");
+				//echo $menu->getlastsql();
+				//echo $menu->save($data);
+				$this->error("没有数据更新!");
 			}
 		}
 		
@@ -55,14 +57,16 @@ class MenuController extends BaseController {
 	 */
 	public function del(){
 		$id=I("id");
-		$admin=M("admin");
-		$admin->where("id='".$id."'");
-		if($admin->delete()){
+		$menu=M("menu");
+		if($menu->where("pid='".$id."'")->count()>0){
+			$this->error("该菜单下存在子菜单，请先删除子菜单!");
+		}
+		$menu->where("id='".$id."'");
+		if($menu->delete()){
 			$this->success("删除成功！");
 			
 		}else{
-			echo $admin->getlastsql();
-			//$this->error("删除失败！");
+			$this->error("删除失败！");
 		}
 	} 
 	
