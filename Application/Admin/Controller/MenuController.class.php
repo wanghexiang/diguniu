@@ -22,7 +22,7 @@ class MenuController extends BaseController {
 		$this->display();
 	}
 	/**
-	 *保存数据
+	 *保存数据   
 	 */
 	public function save(){
 		$menuid=I("menuid");
@@ -53,7 +53,7 @@ class MenuController extends BaseController {
 		
 	}
 	/**
-	 *删除
+	 *删除数据
 	 */
 	public function del(){
 		$id=I("id");
